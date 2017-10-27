@@ -9,6 +9,7 @@ import argparse
 import nltk
 import numpy as np
 import random
+import string
 
 from csv import DictReader
 from sklearn.feature_extraction.text import CountVectorizer
@@ -42,62 +43,66 @@ class Featurizer:
                 top10 = np.argsort(classifier.coef_[i])[-10:]
                 print("%s: %s" % (category, ", ".join(feature_names[top10])))
 
-def transform_QA_pair(question, answer):
+
+def transform_qa_pair(question, answer):
+    
+    # remove punctuations from question and answer (dashes (-) are kept)
+    punctuation = string.punctuation.replace('-','')
+    question = question.translate(str.maketrans('', '', punctuation))
+    answer = answer.translate(str.maketrans('', '', punctuation))
+
+    question = question.lower()
+
     answer_phrase = ''
     for word in answer.split():
-        if word.startswith('('):
-            word = word[1:]
-        if word.endswith(')'):
-            word = word[:-1]
-        answer_phrase += '.' + word
+        answer_phrase += '_' + word
 
     sentence = ''
-    for word in question:
+    for word in question.split():
         sentence += ' ' + word + answer_phrase
     return sentence
 
-def transform_data(data, augmentation=False, answer_pool=None):
-    X = []
+def transform_data(data, augment=False, answer_pool=None):
+    """
+    Args:
+        data: each vector in data is in the form 
+        (question, correct answer index, answer A, answer B, answer C, answer D)
+
+        augment: augment data only if true
+
+        answer_pool: answers to help augment data
+
+    Returns: 
+        (data_x, data_y) where data_x contains the transformations of each 
+        vector in data and data_y contains the corresponding 0-1 labels 
+    """
+    x = []
     y = []
-    for x in data:
-        question = nltk.word_tokenize(x['question'])
-        classifier_input = transform_QA_pair(question, x['answerA'])
-        X.append(classifier_input)
-        if  x['correctAnswer'] == 'A':
-            y.append(1)
-        else:
-            y.append(0)
 
-        classifier_input = transform_QA_pair(question, x['answerB'])
-        X.append(classifier_input)
-        if  x['correctAnswer'] == 'B':
-            y.append(1)
-        else:
-            y.append(0)
-
-        classifier_input = transform_QA_pair(question, x['answerC'])
-        X.append(classifier_input)
-        if  x['correctAnswer'] == 'C':
-            y.append(1)
-        else:
-            y.append(0)
-
-        classifier_input = transform_QA_pair(question, x['answerD'])
-        X.append(classifier_input)
-        if  x['correctAnswer'] == 'D':
-            y.append(1)
-        else:
-            y.append(0)
-
-        if augmentation:
-            answer_list = [x['answerA'], x['answerB'], x['answerC'], x['answerD']]
+    def transform_vector(vector):
+        answers = {
+                    'A': vector['answerA'], 
+                    'B': vector['answerB'], 
+                    'C': vector['answerC'],
+                    'D': vector['answerD']
+                    } 
+        for i in answers:
+            vector_tr = transform_qa_pair(vector['question'], answers[i])
+            x.append(vector_tr)
+            y.append(1) if vector['correctAnswer'] == i else y.append(0)
+        if augment:
             for answer in random.sample(answer_pool, 20):
-                if answer not in answer_list:
-                    classifier_input = transform_QA_pair(question, answer)
-                    X.append(classifier_input)
-                    y.append(0)
+                if answer not in answers.values():
+                    vector_aug = ransform_qa_pair(vector['question'], answer)
+                    x.append(vector_aug)
+                    y.append(0) 
 
-    return X, y
+
+    for vector in data:
+        transform_vector(vector)
+
+
+    return x, y
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='options')
@@ -106,30 +111,21 @@ if __name__ == "__main__":
 
     # Cast to list to keep it all in memory
     data = list(DictReader(open("../data/quizbowl_science/sci_train.csv", 'r')))
+    
+
     # Split to train and validation.
     train = data[:4000]
     val = data[4000:]
 
-    """
-    answer_pool = set()
-    for x in train:
-        if x['answerA'] not in answer_pool:
-            answer_pool.add(x['answerA'])
-        if x['answerB'] not in answer_pool:
-            answer_pool.add(x['answerB'])
-        if x['answerC'] not in answer_pool:
-            answer_pool.add(x['answerC'])
-        if x['answerD'] not in answer_pool:
-            answer_pool.add(x['answerD'])
-    """
+    # Pre-process data
+    x_train_pre,y_train = transform_data(train)
+    x_val_pre, y_val = transform_data(val)
 
-    X_train, y_train = transform_data(train, augmentation=False)
-    X_val, y_val = transform_data(val, augmentation=False)
 
     # get features
     feat = Featurizer()
-    x_train = feat.train_feature(X_train)
-    x_val = feat.test_feature(X_val)
+    x_train = feat.train_feature(x_train_pre)
+    x_val = feat.test_feature(x_val_pre)
 
     # train classifier
     lr = SGDClassifier(loss='log', penalty='l2', shuffle=True, random_state = kSEED)

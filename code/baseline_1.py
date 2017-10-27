@@ -12,6 +12,7 @@ import random
 import string
 
 from csv import DictReader
+from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import SGDClassifier
 
@@ -22,7 +23,6 @@ class Featurizer:
         self.vectorizer = CountVectorizer(
             analyzer='word',
             tokenizer=nltk.word_tokenize,
-            stop_words='english',
             max_features=500000)
 
     def train_feature(self, examples):
@@ -45,7 +45,6 @@ class Featurizer:
 
 
 def transform_qa_pair(question, answer):
-    
     # remove punctuations from question and answer (dashes (-) are kept)
     punctuation = string.punctuation.replace('-','')
     question = question.translate(str.maketrans('', '', punctuation))
@@ -53,13 +52,12 @@ def transform_qa_pair(question, answer):
 
     question = question.lower()
 
-    answer_phrase = ''
-    for word in answer.split():
-        answer_phrase += '_' + word
+    answer_phrase = '_'.join(answer.split())
 
-    sentence = ''
+    sentence = answer_phrase
     for word in question.split():
-        sentence += ' ' + word + answer_phrase
+        if word not in stopwords.words('english'):
+            sentence += ' ' + word + '-' + answer_phrase
     return sentence
 
 def transform_data(data, augment=False, answer_pool=None):
@@ -87,14 +85,14 @@ def transform_data(data, augment=False, answer_pool=None):
                     'D': vector['answerD']
                     } 
         for i in answers:
-            vector_tr = transform_qa_pair(vector['question'], answers[i])
-            x.append(vector_tr)
+            input_sentence = transform_qa_pair(vector['question'], answers[i])
+            x.append(input_sentence)
             y.append(1) if vector['correctAnswer'] == i else y.append(0)
         if augment:
             for answer in random.sample(answer_pool, 20):
                 if answer not in answers.values():
-                    vector_aug = ransform_qa_pair(vector['question'], answer)
-                    x.append(vector_aug)
+                    input_sentence = transform_qa_pair(vector['question'], answer)
+                    x.append(input_sentence)
                     y.append(0) 
 
 
@@ -111,14 +109,13 @@ if __name__ == "__main__":
 
     # Cast to list to keep it all in memory
     data = list(DictReader(open("../data/quizbowl_science/sci_train.csv", 'r')))
-    
 
     # Split to train and validation.
     train = data[:4000]
     val = data[4000:]
 
     # Pre-process data
-    x_train_pre,y_train = transform_data(train)
+    x_train_pre, y_train = transform_data(train)
     x_val_pre, y_val = transform_data(val)
 
 

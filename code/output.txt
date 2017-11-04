@@ -1,0 +1,8 @@
+Train accuracy is 0.998625
+Val accuracy is 0.915336571825
+above accuracies don't mean anything but why are they high? One reason is: predict all as 0, that already gives 75% accuracy
+True train accuracy is 0.999
+True val accuracy is 0.9472588480222068
+This is much better than random guess now :P
+Pos: synthesis-grignard_reaction, version-raman_scattering, poisson-hamiltonian_quantum_mechanics, tissue-xylem, bracket-hamiltonian_quantum_mechanics, graph-hamiltonian_quantum_mechanics, groups-hamiltonian_quantum_mechanics, process-seafloor_spreading, operator-hamiltonian_quantum_mechanics, action-angle-hamiltonian_quantum_mechanics
+Neg: group_mathematics, hamiltonian_quantum_mechanics, georg_wilhelm_friedrich_hegel, don_giovanni, transcription_genetics, g_e_moore, johann_wolfgang_von_goethe, thermoelectric_effectseebeck_effect, arrows_impossibility_theorem, pauli_exclusion_principle

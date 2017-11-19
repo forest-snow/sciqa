@@ -158,8 +158,6 @@ def classify(x_train, y_train, x_test):
 
 
 if __name__ == "__main__":
-
-    # Cast to list to keep it all in memory
     data = qb_train = json.load(open('../data/quizbowl/qb_train.json', 'r'))
 
     # split into train and validation sets

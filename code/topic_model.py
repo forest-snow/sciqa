@@ -1,7 +1,10 @@
 import csv
 import gensim
+import numpy
 import string
 import sys
+
+import _pickle as cPickle
 
 from collections import defaultdict
 from csv import DictReader
@@ -38,14 +41,23 @@ if __name__ == "__main__":
 	doc_term_matrix = [dictionary.doc2bow(doc) for doc in documents]
 
 	# Create the object for LDA model using gensim library.
-	Lda = gensim.models.ldamodel.LdaModel
+	lda_model = gensim.models.ldamodel.LdaModel.load('../data/quizbowl/wiki_topics.model')
 
 	# Train LDA model on the document term matrix.
 	print("Training...")
-	lda_model = Lda(doc_term_matrix, num_topics=kTOPICS, id2word=dictionary, passes=20)
+	lda_model.update(doc_term_matrix, passes=20)
 
 	print("Saving...")
 	lda_model.save('../data/quizbowl/wiki_topics.model')
+
+	doc_topic_matrix = numpy.zeros((len(wiki_data), kTOPICS))
+	for i, bow in enumerate(doc_term_matrix):
+		for topic in lda_model.get_document_topics(bow):
+			tid = topic[0]
+			doc_topic_matrix[int(wiki_data[i]['id']), tid] = topic[1]
+
+	with open('../data/quizbowl/wiki_topic_matrix', 'wb') as pickle_file:
+		cPickle.dump(doc_topic_matrix, pickle_file)
 
 	topic_entity = defaultdict(list)
 	for i, bow in enumerate(doc_term_matrix):

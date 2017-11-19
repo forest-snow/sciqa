@@ -1,200 +1,200 @@
 Topic #0:
-Director_of_the_Central_Intelligence_Agency: 0.858571428571, Vittorio_Emanuele_Orlando: 0.589501442191, Gamal_Abdel_Nasser: 0.554466095867, Muammar_Gaddafi: 0.55069891027, Indira_Gandhi: 0.54515108788, Erich_Honecker: 0.52760622561, Nikita_Khrushchev: 0.526536333955, Pervez_Musharraf: 0.524221431689, Yitzhak_Rabin: 0.51270233103, Deng_Xiaoping: 0.512094635086
+Director_of_the_Central_Intelligence_Agency: 0.858571428571, Vittorio_Emanuele_Orlando: 0.574888411558, Muammar_Gaddafi: 0.548738183443, Gamal_Abdel_Nasser: 0.541235940826, Indira_Gandhi: 0.538731029712, Erich_Honecker: 0.525251886371, Nikita_Khrushchev: 0.522795606849, Pervez_Musharraf: 0.514995111009, Deng_Xiaoping: 0.511522405524, Yitzhak_Rabin: 0.506782534911
 Topic #2:
-Erymanthian_Boar: 0.417575687388, Virtual_Console: 0.41214284419, Hasidic_Judaism: 0.400375817447, Amidah: 0.359959581622, Icosahedron: 0.334, Kaddish: 0.28999759628, Buffer_overflow: 0.25125, Martin_Buber: 0.225390204187, Octahedron: 0.208496361822, Urea_cycle: 0.202
+Erymanthian_Boar: 0.4175, Virtual_Console: 0.412089199541, Hasidic_Judaism: 0.389348968982, Amidah: 0.359383611619, Icosahedron: 0.334, Kaddish: 0.281920335097, Buffer_overflow: 0.25125, Martin_Buber: 0.224673091351, Octahedron: 0.20713059225, Urea_cycle: 0.202
 Topic #3:
-Countable_set: 0.701, Bisection: 0.67, Continuum_hypothesis: 0.667142857143, Cantor_set: 0.598904254975, Parity_(mathematics): 0.572857142857, Line_(geometry): 0.538830032973, Parallelogram: 0.5025, Trapezoid: 0.5025, Cylinder: 0.50125, Ultra_high-net-worth_individual: 0.402
+Countable_set: 0.700999999988, Bisection: 0.67, Continuum_hypothesis: 0.667142857143, Cantor_set: 0.600193323719, Parity_(mathematics): 0.572857142857, Line_(geometry): 0.538980756102, Parallelogram: 0.5025, Trapezoid: 0.5025, Cylinder: 0.50125, Ultra_high-net-worth_individual: 0.402
 Topic #16:
-Citric_acid_cycle: 0.728181818182, Hobbit: 0.609642874943, Jack_the_Ripper: 0.514912054123, Rhiannon: 0.508320634227, The_Egoist_(periodical): 0.421594533795, William_Blackstone: 0.390036950132, She_Walks_in_Beauty: 0.386841106053, John_Wilkes: 0.38524119094, Jean_Rhys: 0.3765505389, John_Burgoyne: 0.364739221672
+Citric_acid_cycle: 0.728181818182, Hobbit: 0.611231748683, Jack_the_Ripper: 0.541235165752, The_Egoist_(periodical): 0.420894773972, Rhiannon: 0.39050252609, William_Blackstone: 0.386258612253, John_Wilkes: 0.383048902093, Jean_Rhys: 0.376625455528, John_Burgoyne: 0.364689309791, Gluconeogenesis: 0.364545454545
 Topic #17:
-Antonello_da_Messina: 0.888946314109, Johann_Tetzel: 0.633383163463, Giorgione: 0.630673280443, Sandro_Botticelli: 0.597500490029, Andrea_del_Verrocchio: 0.590128538907, Paolo_Veronese: 0.582362442595, Masaccio: 0.557446411944, Giovanni_Bellini: 0.542137878321, Andrea_del_Sarto: 0.522921103921, Bartolomé_Esteban_Murillo: 0.521334044807
+Antonello_da_Messina: 0.889564050085, Johann_Tetzel: 0.641381857341, Giorgione: 0.632698076417, Sandro_Botticelli: 0.621582294091, Andrea_del_Verrocchio: 0.593748249657, Paolo_Veronese: 0.58606932991, Masaccio: 0.559224760574, Bartolomé_Esteban_Murillo: 0.541137468991, Giovanni_Bellini: 0.537267845753, Andrea_del_Sarto: 0.533124688865
 Topic #20:
-Pion: 0.713577364459, Battle_of_Quebec_(1775): 0.697920223332, Biot–Savart_law: 0.67, Battle_of_Blenheim: 0.644978185988, Cannae: 0.643540395997, Quark: 0.614151610487, Battle_of_Manzikert: 0.563892038729, Battle_of_the_Pyramids: 0.528546439536, Electric_dipole_moment: 0.505, Voltage: 0.500833333333
+Pion: 0.715704711269, Battle_of_Quebec_(1775): 0.697480126638, Biot–Savart_law: 0.67, Battle_of_Blenheim: 0.637807696225, Cannae: 0.637336240313, Quark: 0.623958721192, Battle_of_Manzikert: 0.549437929729, Electric_dipole_moment: 0.505, Battle_of_the_Pyramids: 0.501130874931, Voltage: 0.500833333333
 Topic #36:
-Breccia: 0.839606161034, Semiconductor: 0.82110307661, Punnett_square: 0.818636363636, Beta-Hydride_elimination: 0.80064418047, Pi_bond: 0.796474253474, Elasticity_(physics): 0.787851342111, X-ray_spectroscopy: 0.784617863175, Renting: 0.783043478261, Bagpipes: 0.777004114161, Discriminant: 0.769338186249
+Breccia: 0.833269465533, Punnett_square: 0.818636363636, Semiconductor: 0.817905202579, Beta-Hydride_elimination: 0.800666666667, Pi_bond: 0.796100533147, Elasticity_(physics): 0.786829464066, X-ray_spectroscopy: 0.783034242868, Bagpipes: 0.771035337852, Discriminant: 0.769142940203, Invasion_of_England: 0.759975514983
 Topic #38:
-Benvolio: 0.376314012845, Malvolio: 0.336256312551, Pryderi: 0.335074435216, Tybalt: 0.294667627689, Phaedo: 0.290808337623, Petals_of_Blood: 0.28182107012, Mercutio: 0.275747573859, Brân_the_Blessed: 0.265356577844, Revolutionary_Insurrectionary_Army_of_Ukraine: 0.261843680911, Pendulum: 0.254000058999
+Benvolio: 0.375898450864, Malvolio: 0.336302012676, Pryderi: 0.304366481244, Tybalt: 0.301483729345, Phaedo: 0.284926939989, Petals_of_Blood: 0.283961057906, Mercutio: 0.283891269849, Pendulum: 0.253984126467, Revolutionary_Insurrectionary_Army_of_Ukraine: 0.252587170715, Brân_the_Blessed: 0.249456661636
 Topic #50:
-William_Golding: 0.71277067443, Alan_Sillitoe: 0.576956019619, José_Saramago: 0.538689563536, Lawrence_Durrell: 0.53237656478, James_Joyce: 0.522091580072, Friedrich_Dürrenmatt: 0.485695409926, Walter_Van_Tilburg_Clark: 0.472563115666, D._H._Lawrence: 0.471280147281, Bolesław_Prus: 0.469397296474, Saint-John_Perse: 0.463990824055
+William_Golding: 0.666774302808, Alan_Sillitoe: 0.549499542969, José_Saramago: 0.541187111411, Lawrence_Durrell: 0.509290096786, James_Joyce: 0.499750475683, Walter_Van_Tilburg_Clark: 0.473553810441, Friedrich_Dürrenmatt: 0.467788569268, Bolesław_Prus: 0.447661738493, D._H._Lawrence: 0.439409820409, Saint-John_Perse: 0.436322585236
 Topic #52:
-Geb: 0.834166666667, Set_(deity): 0.785878435954, Enlil: 0.713211553922, Allotropes_of_phosphorus: 0.67, Inti: 0.667777777778, Sobek: 0.666614263822, Deadweight_loss: 0.62625, Varuna: 0.624618733944, Julien_Sorel: 0.532815467421, Xipe_Totec: 0.526772787022
+Geb: 0.750833333333, Enlil: 0.710787252419, Set_(deity): 0.701332020883, Allotropes_of_phosphorus: 0.67, Deadweight_loss: 0.62625, Varuna: 0.619482560034, Inti: 0.580759834264, Sobek: 0.554116307631, Julien_Sorel: 0.540116928605, Xipe_Totec: 0.5287755654
 Topic #61:
-Centromere: 0.857391579762, Compact_finite_difference: 0.845339458528, Ultraviolet_catastrophe: 0.767992865256, Blank_verse: 0.760576753177, Spherical_coordinate_system: 0.756387096492, Pragmatic_sanction: 0.749442029486, Bragi: 0.742171394225, Black_body: 0.715714283749, Fault_(geology): 0.690407387351, Skaði: 0.68121756598
-Topic #65:
-Lines_written_a_few_miles_above_Tintern_Abbey: 0.947894736733, Adonaïs: 0.86749144783, To_a_Skylark: 0.850401074573, Chitin: 0.802, Sonnet_18: 0.726176175913, Axiom_of_choice: 0.715825160521, Frost_at_Midnight: 0.708575412833, A_Valediction:_Forbidding_Mourning: 0.685847205629, Samson_Agonistes: 0.653504093068, Dover_Beach: 0.646411249676
-Topic #77:
-Martin_Scorsese: 0.515329186357, On_the_Waterfront: 0.510920733287, Akira_Kurosawa: 0.46321372759, Ben_Affleck: 0.444551332569, Jack_Nicholson: 0.443219232482, George_Clooney: 0.442482331852, Ingmar_Bergman: 0.441938720788, Don_Cheadle: 0.433172796546, Annie_Hall: 0.429393971832, The_Godfather: 0.380951804281
-Topic #83:
-Friday: 0.829046124512, Louis_(given_name): 0.793144354061, Marble: 0.711186322096, Ant: 0.683700676931, Bodhisattva: 0.674799656469, Valkyrie: 0.657008230731, White: 0.634141852933, Ender's_Game: 0.630033960124, Kama: 0.617858745616, Four_Noble_Truths: 0.611593352304
-Topic #87:
-Peter_Debye: 0.871263331627, Friedrich_Paschen: 0.788769447288, Stanislao_Cannizzaro: 0.716835997213, Jan_Oort: 0.713157433495, Svante_Arrhenius: 0.693880043581, Irving_Langmuir: 0.667910380503, John_William_Strutt,_3rd_Baron_Rayleigh: 0.63507108171, Camillo_Golgi: 0.618560655687, Paul_Dirac: 0.613980162528, Friedrich_Bessel: 0.611366519632
-Topic #90:
-Taq_polymerase: 0.402, Meselson–Stahl_experiment: 0.334444444444, Cytokinin: 0.25125, DNA_polymerase: 0.231538461538, The_Ballad_of_Reading_Gaol: 0.2190625, Filippo_Brunelleschi: 0.217240352919, DNA_replication: 0.211341366817, Beatrix_Potter: 0.202906166868, Midnight's_Children: 0.201315067133, Helicase: 0.182727272727
-Topic #13:
-Capillary: 0.976976744186, Op_art: 0.931379310345, Candle: 0.929285714286, Epicureanism: 0.929285714286, Michelson_interferometer: 0.929285714286, Diode: 0.922195239733, Median: 0.898865979089, Snell's_law: 0.876953703475, Axon: 0.866687359569, Hydride: 0.866203487477
-Topic #25:
-Telophase: 0.7525, Battle_of_the_Eurymedon: 0.637289670541, Urea_cycle: 0.602, Cytokinesis: 0.602, Macedonian_Wars: 0.545638942441, Helicase: 0.5415781941, Prophase: 0.505, Gravitational_constant: 0.5025, Interphase: 0.5025, Hadley_cell: 0.492391154836
-Topic #72:
-Drum: 0.941764705882, Flatworm: 0.875625, Pig: 0.846923076923, Coral: 0.786428571429, Bird: 0.700064607384, Albatross: 0.683355279325, Cancer: 0.630522767774, DNA: 0.613027923388, Influenza: 0.607260609541, Leprosy: 0.562053352447
-Topic #92:
-Battle_of_South_Mountain: 0.482883186056, March_on_Washington_for_Jobs_and_Freedom: 0.454318001539, Ontological_argument: 0.417646578448, Battle_of_Mobile_Bay: 0.410172835966, USS_Constitution: 0.395757571248, Battle_of_Appomattox_Court_House: 0.392178018859, Correspondence_principle: 0.351651689746, Battle_of_Antietam: 0.346075667333, Battle_of_Pea_Ridge: 0.342533324605, Battle_of_Shiloh: 0.333259778708
-Topic #5:
-Rosmersholm: 0.538922146671, Poker: 0.532775346493, Balmer_series: 0.50125, Carlo_Gozzi: 0.493246278652, Friedrich_Fröbel: 0.4752478658, Elizabeth_Barrett_Browning: 0.462861510323, Tales_of_a_Wayside_Inn: 0.454360553146, An_Enquiry_Concerning_Human_Understanding: 0.45352538343, Principia_Ethica: 0.451813238902, Edward_Bellamy: 0.45062169913
-Topic #15:
-Fronde: 0.343135383029, Benito_Juárez: 0.31793680074, University_of_Kansas: 0.279409965712, Gila_River: 0.274512878298, Diego_Rivera: 0.259839866376, Octavio_Paz: 0.251237695017, Frida_Kahlo: 0.235690439548, Alexander_III_of_Scotland: 0.225329189197, Mariano_Azuela: 0.216658601483, B._Traven: 0.21065525134
-Topic #28:
-Spiral_galaxy: 0.398763188266, Active_galactic_nucleus: 0.368947368421, Easter,_1916: 0.356664896643, Loch_Ness: 0.253919021981, Seyfert_galaxy: 0.204965002474, Deep_inelastic_scattering: 0.202, Necrosis: 0.187729271992, Electric_charge: 0.185978758154, Endgame_(play): 0.182727272727, Clarice_Lispector: 0.175102488205
-Topic #98:
-French_language: 0.600534065021, Aquifer: 0.589841546658, Benjamin_Disraeli: 0.494905273694, Arthur_Balfour: 0.494767638404, Robert_Peel: 0.48258782488, William_Ewart_Gladstone: 0.465559372209, Henry_John_Temple,_3rd_Viscount_Palmerston: 0.465022433711, Neville_Chamberlain: 0.417768203057, Arabic: 0.409835050894, William_Pitt_the_Younger: 0.392462330115
-Topic #11:
-Potential: 0.505, Ampère's_circuital_law: 0.5025, Electric_potential: 0.501666666667, Huldrych_Zwingli: 0.48495885401, Georg_Cantor: 0.440649830792, Edmund_Husserl: 0.429788707402, Karl_Jaspers: 0.411668037918, Albrecht_Altdorfer: 0.407447881778, Franz_Brentano: 0.404581922765, Gottlob_Frege: 0.388214883223
-Topic #39:
-Moons_of_Uranus: 0.42435482174, Ellesmere_Island: 0.378972810998, List_of_monarchs_of_Northumbria: 0.372656822553, Phenolphthalein: 0.262174160024, Marie_Curie: 0.25252862325, Isambard_Kingdom_Brunel: 0.237128515788, Mach_number: 0.22796138845, Deep_inelastic_scattering: 0.202, Bernoulli's_principle: 0.198689574072, Pierre_Curie: 0.176120738472
-Topic #44:
-Uracil: 0.934322017211, Ammonium: 0.905238095238, Aldosterone: 0.896896551068, Butane: 0.894178841008, Zinc_bromide: 0.874712278327, Guanine: 0.79913542809, Adenine: 0.708901958503, Hydrogen_peroxide_-_urea: 0.705627731939, Purine: 0.703362121159, Lactose: 0.697943969668
-Topic #45:
-Cochise: 0.663439760446, Rosa_Parks: 0.66317611152, Anthony_Bourdain: 0.617739957247, Margaret_Bourke-White: 0.616379441102, Robert_Wolke: 0.596793979921, Jane_Addams: 0.586250292287, Ben_Shahn: 0.586047246305, Alvin_Toffler: 0.58255343491, Susan_B._Anthony: 0.581926225424, Rand_Paul: 0.574554682574
-Topic #57:
-Antiparticle: 0.505, RNA_polymerase: 0.43, Intron: 0.301614210284, RNA_interference: 0.290959680755, Shinto_shrine: 0.267966999685, Quasimodo: 0.252740063275, Histone: 0.2525, Ode:_Intimations_of_Immortality: 0.233840367169, City: 0.21853865079, Aran_Islands: 0.213101018268
-Topic #68:
-New_York_Jets: 0.639848177381, Denver_Broncos: 0.612191644519, Seattle_Mariners: 0.57906898677, Pointillism: 0.572857142857, Baltimore_Ravens: 0.562712143885, Mormonism: 0.531685923825, Detroit_Lions: 0.520821052367, Column_chromatography: 0.5025, London_dispersion_force: 0.47629499312, Detroit_Pistons: 0.439331947986
-Topic #9:
-1598: 0.750108673513, 1850: 0.746304155578, Calendar: 0.617686657351, Density: 0.601, Bindusara: 0.581787120833, 1655: 0.542066549313, Satyagraha: 0.53081671581, Punic_Wars: 0.519013526228, Aggregate_demand: 0.51224705404, Cilium: 0.506215175556
-Topic #21:
-Golgi_apparatus: 0.817823831075, Ribosome: 0.611666666667, Isotope: 0.597007004964, Microwave: 0.50111005373, Ross_Ice_Shelf: 0.41455065469, Boat: 0.413564420444, Legionnaires'_disease: 0.40617202411, Gastrulation: 0.379807612998, Capital_(economics): 0.355749062275, Cnidaria: 0.334224124571
-Topic #64:
-Williamson_ether_synthesis: 0.91, Aldol_condensation: 0.801, Claisen_condensation: 0.693076923077, Wolff–Kishner_reduction: 0.667777777778, Fischer–Speier_esterification: 0.6675, Clemmensen_reduction: 0.546363636364, Kirkwood_gap: 0.402, Jones_oxidation: 0.385384615385, Oppenauer_oxidation: 0.385384615385, Baeyer–Villiger_oxidation: 0.368947368421
-Topic #89:
-Probable_cause: 0.501666666667, Igneous_rock: 0.500880201828, Caldera: 0.348291707887, Sedimentary_rock: 0.334999999999, Nebula: 0.288114092715, Ali: 0.279432884821, Eye: 0.244947967473, Cretaceous–Paleogene_boundary: 0.237660796185, Njörðr: 0.222777777778, Leif_Erikson: 0.218639524073
-Topic #42:
-The_Little_Foxes: 0.817982937938, Bus_Stop_(William_Inge_play): 0.814053472677, The_Night_of_the_Iguana: 0.808832143463, Glengarry_Glen_Ross: 0.8046188602, The_Rose_Tattoo: 0.782452808719, American_Buffalo_(play): 0.768665066556, Strange_Interlude: 0.762577778231, Crystallization_of_polymers: 0.751249999947, The_Emperor_Jones: 0.731133027837, Fences_(play): 0.701024022782
-Topic #51:
-Baba_Yaga: 0.770079356545, Volume: 0.505, BCS_theory: 0.505, Xibalba: 0.479000990485, Frigg: 0.407923138328, Second_Great_Awakening: 0.40332442179, Scylla: 0.354147039882, Yggdrasil: 0.351991568514, Angrboða: 0.329439380841, Hardy–Weinberg_principle: 0.328828013121
-Topic #53:
-The_Poverty_of_Historicism: 0.7005, Philosophy_and_the_Mirror_of_Nature: 0.688125, The_Essence_of_Christianity: 0.684898220183, Against_Method: 0.665287370025, The_Open_Society_and_Its_Enemies: 0.617880724734, A_Brief_History_of_Time: 0.608234125995, The_Savage_Mind: 0.587273153976, The_Concept_of_Mind: 0.559583647675, The_Affluent_Society: 0.553027414995, The_Structure_of_Scientific_Revolutions: 0.547957723249
-Topic #69:
-Ottorino_Respighi: 0.796737045616, Vincenzo_Bellini: 0.782565238963, Carl_Nielsen: 0.764471092838, Paul_Dukas: 0.759175272834, Mily_Balakirev: 0.716239402678, Alexander_Glazunov: 0.692246219647, Georges_Bizet: 0.677110099144, Arthur_Honegger: 0.676902848914, Gaetano_Donizetti: 0.668138421456, Jean_Sibelius: 0.668110782535
-Topic #66:
-Comparator: 0.886740661403, Baleen: 0.797600524183, Atharvaveda: 0.755034059982, Carbon-14: 0.743218947982, Star: 0.731674496035, Equilateral_triangle: 0.707535660793, Thermonuclear_fusion: 0.707240648526, Algae: 0.64356915323, Amino_acid: 0.642753214856, Solar_eclipse: 0.641086931896
-Topic #67:
-Malawi: 0.962401934976, Canada: 0.914043153117, Chad: 0.901227016384, Benin: 0.869270110024, Jordan: 0.866933344749, Kuwait: 0.85697529217, Bhutan: 0.854518450258, Mali: 0.847575359005, Burundi: 0.84144250737, Belgium: 0.840886263106
-Topic #88:
-Kitchen_cabinet: 0.7525, ATP_synthase: 0.4175, Beatitudes: 0.362107032377, Yahoo!: 0.326122845998, Facebook: 0.313557287065, Google: 0.309856721048, Netflix: 0.302431780299, GEICO: 0.279935971837, Uber_(company): 0.271269812503, Bond_order: 0.2525
-Topic #24:
-Deborah: 0.749544268335, Gomer: 0.725425541629, Adam: 0.560052577975, Samuel: 0.555238638986, Absalom: 0.543643093121, Nehemiah: 0.511595178082, Joseph_(Genesis): 0.510060322385, Gulf_of_Tonkin: 0.508723414882, International_Date_Line: 0.505554497698, Ester: 0.5025
-Topic #27:
-Titration: 0.901, Angiogenesis: 0.835, Globular_cluster: 0.81902617739, Wavelength: 0.802, Passive_voice: 0.801, Wave_function: 0.749924483996, Meningitis: 0.741153299787, Nernst_equation: 0.715714285714, Right_angle: 0.668333333333, Castle: 0.638420871068
-Topic #48:
-Elasticity_(economics): 0.749815303148, Phlogiston_theory: 0.614476040889, Lac_operon: 0.5820680844, DNA_replication: 0.570015584522, Cone_cell: 0.552647343694, Semiotics: 0.529928272107, Empty_set: 0.526352357808, Types_of_volcanic_eruptions: 0.510260484399, Species: 0.499740340547, Transformer: 0.498775644944
-Topic #60:
-Sulpicia: 0.699302068666, Miltiades: 0.630858955692, Tacitus: 0.602182494426, Quintus_Fabius_Maximus: 0.600644654867, Antigonus_I_Monophthalmus: 0.578433231324, Croesus: 0.570704331206, Pyrrhus_of_Epirus: 0.55355637967, Jugurtha: 0.545552447396, Arius: 0.541367960349, Aristides: 0.535171734837
-Topic #70:
-Bitterroot_Range: 0.605927413568, Riemann_sum: 0.602, Cascade_Range: 0.594665370993, Atlas_Mountains: 0.574164718304, Pyrenees: 0.566503054475, Appalachian_Mountains: 0.555246130944, Nazca_Plate: 0.528152411867, Symmetry: 0.505, Adirondack_Mountains: 0.471130612725, Tierra_del_Fuego: 0.469861334043
-Topic #86:
-Xenopus: 0.697278539622, George_I_of_Great_Britain: 0.635861358743, Edward_VI_of_England: 0.614414768783, Edward_II_of_England: 0.611356330374, Edward_III_of_England: 0.593511604419, James_II_of_England: 0.577750911247, Charles_II_of_England: 0.568451643876, John,_King_of_England: 0.554164194797, Richard_II_of_England: 0.538293709031, Henry_V_of_England: 0.536211361273
-Topic #12:
-Neo-Assyrian_Empire: 0.898228567258, Akkadian_Empire: 0.778704196848, Song_dynasty: 0.739750779708, Ayyubid_dynasty: 0.707215937548, Parthian_Empire: 0.697954151613, Bithynia: 0.655237657371, Dahomey: 0.641230975262, Kingdom_of_Aksum: 0.62001625665, Achaean_League: 0.616372748221, Republic_of_Venice: 0.605531145597
-Topic #31:
-Rockefeller: 0.301, Sublime_(philosophy): 0.278333333333, Object_(computer_science): 0.273636363636, Arnolfini_Portrait: 0.263684210526, Acadia_National_Park: 0.2404, Bismarck_(board_game): 0.200666666667, Anastasio_Somoza_Debayle: 0.186479832628, Fibonacci_number: 0.182727272727, Yuri_Dolgorukiy: 0.168797318444, Because_I_could_not_stop_for_Death: 0.1675
-Topic #59:
-Mount_Whitney: 0.690212979952, Cannery_Row: 0.40994297662, Appalachian_Trail: 0.324005860637, Death_Valley: 0.317296690731, Mount_Mitchell: 0.315302400846, Pines_of_Rome: 0.286088919648, Denali: 0.284334299102, Crater_Lake: 0.274827007908, Strange_quark: 0.273636363636, Mount_Logan: 0.26289634635
+Centromere: 0.857857142857, Compact_finite_difference: 0.851924520622, Ultraviolet_catastrophe: 0.767410576174, Blank_verse: 0.759793659785, Spherical_coordinate_system: 0.756288736264, Pragmatic_sanction: 0.749714390274, Bragi: 0.743758581759, Black_body: 0.715714285714, Fault_(geology): 0.691926167831, Skaði: 0.680392682728
 Topic #62:
-The_Burghers_of_Calais: 0.60298739585, Robie_House: 0.583075075271, Fort_Ticonderoga: 0.566846026586, Brook_Farm: 0.555334416636, Seagram_Building: 0.499247001596, Museum_of_El_Greco: 0.47090125212, Chrysler_Building: 0.445977613913, Second_Bank_of_the_United_States: 0.430636343378, Sons_of_Liberty: 0.41876685978, Soliton: 0.4175
+The_Burghers_of_Calais: 0.603819273573, Robie_House: 0.583208226689, Fort_Ticonderoga: 0.564695607922, Brook_Farm: 0.552439920902, Seagram_Building: 0.499312675169, Museum_of_El_Greco: 0.469466330208, Chrysler_Building: 0.446404319374, Second_Bank_of_the_United_States: 0.429314221028, Sons_of_Liberty: 0.421530901381, Soliton: 0.4175
+Topic #65:
+Lines_written_a_few_miles_above_Tintern_Abbey: 0.947894736842, Adonaïs: 0.867077409169, To_a_Skylark: 0.8505, Chitin: 0.802, Sonnet_18: 0.710137787296, Axiom_of_choice: 0.702317408673, Frost_at_Midnight: 0.694555529834, A_Valediction:_Forbidding_Mourning: 0.682416351704, Samson_Agonistes: 0.654107690606, Dover_Beach: 0.64844730486
+Topic #77:
+On_the_Waterfront: 0.50571444942, Martin_Scorsese: 0.493093229229, Akira_Kurosawa: 0.458929033402, Ingmar_Bergman: 0.436510905773, George_Clooney: 0.429530792977, Ben_Affleck: 0.429149383909, Jack_Nicholson: 0.427120214269, Don_Cheadle: 0.418973265249, Annie_Hall: 0.411767540598, The_Godfather: 0.374713494487
+Topic #83:
+Friday: 0.820143622077, Louis_(given_name): 0.788205038796, Marble: 0.703841538832, Ant: 0.679299993025, Bodhisattva: 0.674034515742, Valkyrie: 0.652590886722, White: 0.631103479349, Ender's_Game: 0.617133324729, Four_Noble_Truths: 0.609911161502, Kama: 0.609870632137
+Topic #87:
+Peter_Debye: 0.866912760687, Friedrich_Paschen: 0.789710896933, Jan_Oort: 0.71377027913, Stanislao_Cannizzaro: 0.704871255457, Svante_Arrhenius: 0.689690825062, Irving_Langmuir: 0.649218591075, John_William_Strutt,_3rd_Baron_Rayleigh: 0.638268347662, Paul_Dirac: 0.617465904921, Camillo_Golgi: 0.61739960541, Karl_Weierstrass: 0.614972309519
+Topic #90:
+Taq_polymerase: 0.402, Meselson–Stahl_experiment: 0.334444444444, Cytokinin: 0.25125, DNA_polymerase: 0.231538461538, The_Ballad_of_Reading_Gaol: 0.2190625, Filippo_Brunelleschi: 0.211886055162, DNA_replication: 0.20965886951, Beatrix_Potter: 0.208017978428, Midnight's_Children: 0.201383401177, Paolo_Veronese: 0.192026432149
+Topic #13:
+Capillary: 0.976976744186, Op_art: 0.931379310345, Michelson_interferometer: 0.929285714286, Epicureanism: 0.929285714286, Candle: 0.92928571428, Diode: 0.921717920545, Median: 0.898457990161, Snell's_law: 0.876281633924, Hydride: 0.865655046937, Schwarzschild_radius: 0.864090909091
+Topic #25:
+Telophase: 0.7525, Battle_of_the_Eurymedon: 0.650754767056, Urea_cycle: 0.602, Cytokinesis: 0.602, Macedonian_Wars: 0.550694696257, Helicase: 0.541470679084, Prophase: 0.505, Interphase: 0.5025, Gravitational_constant: 0.5025, Hadley_cell: 0.452522543382
+Topic #72:
+Drum: 0.941764705882, Flatworm: 0.875625, Pig: 0.846923076923, Coral: 0.786428571429, Albatross: 0.683324346142, Cancer: 0.618159503274, Influenza: 0.613521952402, Bird: 0.596277368903, DNA: 0.59477479151, Leprosy: 0.562100714432
+Topic #92:
+Battle_of_South_Mountain: 0.502092789031, Battle_of_Mobile_Bay: 0.453108005157, March_on_Washington_for_Jobs_and_Freedom: 0.447567011713, Battle_of_Appomattox_Court_House: 0.413347325769, USS_Constitution: 0.406038320835, Battle_of_Antietam: 0.36378646273, Correspondence_principle: 0.362704634813, Battle_of_Pea_Ridge: 0.36027942501, Battle_of_Shiloh: 0.344716250295, Assassination_of_Abraham_Lincoln: 0.318922425833
+Topic #5:
+Rosmersholm: 0.537518202413, Poker: 0.532070965742, Carlo_Gozzi: 0.502060024079, Balmer_series: 0.50125, Friedrich_Fröbel: 0.481043069422, An_Enquiry_Concerning_Human_Understanding: 0.45734798567, Principia_Ethica: 0.456338852014, Tales_of_a_Wayside_Inn: 0.455329094045, Elizabeth_Barrett_Browning: 0.455007695743, Anne_Brontë: 0.443845615767
+Topic #15:
+Fronde: 0.341029113131, Benito_Juárez: 0.32486728261, University_of_Kansas: 0.286943408686, Gila_River: 0.274791734712, Diego_Rivera: 0.260761580988, Octavio_Paz: 0.251798701483, Frida_Kahlo: 0.236280711073, Alexander_III_of_Scotland: 0.227516077309, Mariano_Azuela: 0.216973064299, B._Traven: 0.215835630941
+Topic #28:
+Spiral_galaxy: 0.385384615385, Easter,_1916: 0.372704190637, Active_galactic_nucleus: 0.368947368421, Loch_Ness: 0.252795403323, Deep_inelastic_scattering: 0.202, Seyfert_galaxy: 0.200666666667, Necrosis: 0.196937318405, An_Irish_Airman_Foresees_His_Death: 0.184770378458, Electric_charge: 0.184412738477, Endgame_(play): 0.182727272727
+Topic #98:
+French_language: 0.604698169704, Aquifer: 0.590960145775, Arthur_Balfour: 0.509075433457, Benjamin_Disraeli: 0.503147597926, Robert_Peel: 0.494080246378, Henry_John_Temple,_3rd_Viscount_Palmerston: 0.478417992658, William_Ewart_Gladstone: 0.474796514702, Neville_Chamberlain: 0.431155320114, Arabic: 0.40957622716, William_Pitt_the_Younger: 0.408652868632
+Topic #11:
+Potential: 0.505, Ampère's_circuital_law: 0.5025, Electric_potential: 0.501666666667, Huldrych_Zwingli: 0.470252528934, Edmund_Husserl: 0.429463669588, Georg_Cantor: 0.416534555328, Karl_Jaspers: 0.412740380146, Franz_Brentano: 0.403780202078, Gottlob_Frege: 0.399441191821, Albrecht_Altdorfer: 0.370868592456
+Topic #39:
+Moons_of_Uranus: 0.402171791463, List_of_monarchs_of_Northumbria: 0.362171537041, Ellesmere_Island: 0.359809404772, Phenolphthalein: 0.260081250266, Marie_Curie: 0.243025343989, Isambard_Kingdom_Brunel: 0.229582739374, Mach_number: 0.220021447696, Deep_inelastic_scattering: 0.202, Bernoulli's_principle: 0.193165017984, Man_and_Superman: 0.174522278433
+Topic #44:
+Uracil: 0.934442430208, Ammonium: 0.905238095238, Aldosterone: 0.896896551724, Butane: 0.894471140379, Zinc_bromide: 0.874867801616, Guanine: 0.799090794345, Hydrogen_peroxide_-_urea: 0.707310906874, Adenine: 0.706713320571, Purine: 0.706403479563, Lactose: 0.703662957754
+Topic #45:
+Cochise: 0.657419778359, Rosa_Parks: 0.630333706216, Anthony_Bourdain: 0.61911126528, Robert_Wolke: 0.608305255192, Harper_Lee: 0.58470687968, Alvin_Toffler: 0.580208543943, Margaret_Bourke-White: 0.568588247323, Ben_Shahn: 0.564509822998, Rand_Paul: 0.563664037665, Jane_Addams: 0.561019813367
+Topic #57:
+Antiparticle: 0.505, RNA_polymerase: 0.43, Intron: 0.300645261747, RNA_interference: 0.286643166512, Shinto_shrine: 0.259899591273, Quasimodo: 0.25284855931, Demand_curve: 0.2525, Histone: 0.2525, Ode:_Intimations_of_Immortality: 0.230030498038, Aran_Islands: 0.21326046615
+Topic #68:
+New_York_Jets: 0.629982297293, Denver_Broncos: 0.612980580521, Seattle_Mariners: 0.577803789099, Pointillism: 0.572857142824, Baltimore_Ravens: 0.562385051528, Mormonism: 0.533803111981, Detroit_Lions: 0.52215188034, Column_chromatography: 0.5025, London_dispersion_force: 0.478327894263, Detroit_Pistons: 0.447646463443
+Topic #9:
+Calendar: 0.654278998103, Density: 0.600999999986, Bindusara: 0.579524115491, Satyagraha: 0.527180004857, 1655: 0.51161255226, Punic_Wars: 0.501980292088, Natural_logarithm: 0.50125, Curie_temperature: 0.497646050794, Hydrogen: 0.494492073024, Alien_abduction: 0.489031718946
+Topic #21:
+Golgi_apparatus: 0.818856634696, Ribosome: 0.611666666666, Isotope: 0.599550852788, Microwave: 0.501538096375, Boat: 0.420031404519, Legionnaires'_disease: 0.414351317465, Capital_(economics): 0.389326098898, Gastrulation: 0.386797331749, Cnidaria: 0.35258814671, Ross_Ice_Shelf: 0.337806188744
+Topic #64:
+Williamson_ether_synthesis: 0.91, Aldol_condensation: 0.801, Claisen_condensation: 0.693076923077, Wolff–Kishner_reduction: 0.667777777778, Fischer–Speier_esterification: 0.6675, Clemmensen_reduction: 0.546363636364, Kirkwood_gap: 0.402, Oppenauer_oxidation: 0.385384615385, Jones_oxidation: 0.385384615385, Baeyer–Villiger_oxidation: 0.368947368421
+Topic #89:
+Probable_cause: 0.501666666667, Igneous_rock: 0.500833333333, Caldera: 0.348260869565, Sedimentary_rock: 0.335, Nebula: 0.289170620395, Ali: 0.279051003137, Eye: 0.245460657382, Cretaceous–Paleogene_boundary: 0.236936040118, Njörðr: 0.222777777777, Leif_Erikson: 0.222735233903
+Topic #42:
+The_Little_Foxes: 0.818444360119, Bus_Stop_(William_Inge_play): 0.814780351012, American_Buffalo_(play): 0.813124999997, The_Night_of_the_Iguana: 0.808356720219, Glengarry_Glen_Ross: 0.808064092848, The_Rose_Tattoo: 0.780678909834, Strange_Interlude: 0.762521245085, Crystallization_of_polymers: 0.75125, The_Emperor_Jones: 0.731605652334, The_Piano_Lesson: 0.700869329341
+Topic #51:
+Baba_Yaga: 0.772629472942, Xibalba: 0.510380398088, Volume: 0.505, BCS_theory: 0.505, Frigg: 0.415236839087, Second_Great_Awakening: 0.410279594369, Scylla: 0.358828478544, Yggdrasil: 0.356674926493, Angrboða: 0.337192610902, Hardy–Weinberg_principle: 0.329649563742
+Topic #53:
+The_Poverty_of_Historicism: 0.700499999996, Philosophy_and_the_Mirror_of_Nature: 0.688125, The_Essence_of_Christianity: 0.685908189737, Against_Method: 0.668426436184, The_Open_Society_and_Its_Enemies: 0.617941176471, A_Brief_History_of_Time: 0.607255873015, The_Savage_Mind: 0.588383272699, The_Concept_of_Mind: 0.562948915469, The_Affluent_Society: 0.555573527309, The_Structure_of_Scientific_Revolutions: 0.551941534208
+Topic #69:
+Ottorino_Respighi: 0.793619701852, Vincenzo_Bellini: 0.779458382542, Carl_Nielsen: 0.762840396731, Paul_Dukas: 0.758102469336, Mily_Balakirev: 0.715673242592, Alexander_Glazunov: 0.691585110951, Arthur_Honegger: 0.673167832061, Jean_Sibelius: 0.668747191527, Georges_Bizet: 0.664116029307, Antoine-Louis_Barye: 0.656885953614
+Topic #66:
+Comparator: 0.886254223746, Baleen: 0.797321036078, Atharvaveda: 0.743862276845, Star: 0.729093226876, Carbon-14: 0.719544279994, Equilateral_triangle: 0.706376772309, Thermonuclear_fusion: 0.705206351299, Hyperinflation: 0.674757069514, Amino_acid: 0.64642293552, Algae: 0.637118408048
+Topic #67:
+Malawi: 0.939309770564, Canada: 0.910209038261, Chad: 0.877404439386, Jordan: 0.86529904173, Bhutan: 0.855163358419, Benin: 0.851512514583, Kuwait: 0.849671840975, Belgium: 0.840794430347, Monaco: 0.833386288368, Malaysia: 0.826967733524
+Topic #88:
+Kitchen_cabinet: 0.7525, ATP_synthase: 0.4175, Beatitudes: 0.3604, Yahoo!: 0.326323925632, Facebook: 0.312726664392, Google: 0.307877192656, Netflix: 0.304205319875, GEICO: 0.278591092519, Uber_(company): 0.2721884753, Bond_order: 0.2525
+Topic #24:
+Deborah: 0.733585160623, Gomer: 0.725684825797, Adam: 0.565541722678, Samuel: 0.557376672653, Joseph_(Genesis): 0.514240528875, International_Date_Line: 0.513194407489, Nehemiah: 0.511306649974, Ester: 0.5025, Diol: 0.5025, Aaron: 0.490675098334
+Topic #27:
+Titration: 0.901, Angiogenesis: 0.835, Globular_cluster: 0.819044781686, Wavelength: 0.802, Wave_function: 0.749919746669, Nernst_equation: 0.715714285714, Passive_voice: 0.703430103942, Meningitis: 0.673245356658, Right_angle: 0.668333333333, Castle: 0.638378669846
+Topic #48:
+Elasticity_(economics): 0.749788024154, Phlogiston_theory: 0.613364963683, Lac_operon: 0.572856083974, DNA_replication: 0.568334019853, Cone_cell: 0.551208448893, Semiotics: 0.529701184401, Empty_set: 0.521584647576, Types_of_volcanic_eruptions: 0.499306150943, Transformer: 0.496520964056, Species: 0.485283044781
+Topic #60:
+Sulpicia: 0.712392031596, Miltiades: 0.626095751243, Tacitus: 0.604479790043, Quintus_Fabius_Maximus: 0.598591304414, Antigonus_I_Monophthalmus: 0.574581411394, Croesus: 0.557655658153, Jugurtha: 0.546779817873, Pyrrhus_of_Epirus: 0.531947529075, Aristides: 0.530822519525, Arius: 0.526361419541
+Topic #70:
+Bitterroot_Range: 0.602558683285, Riemann_sum: 0.602, Cascade_Range: 0.589690023472, Atlas_Mountains: 0.571782027978, Pyrenees: 0.565720896473, Appalachian_Mountains: 0.540602159169, Symmetry: 0.505, Nazca_Plate: 0.502722416468, Adirondack_Mountains: 0.471352606516, Tierra_del_Fuego: 0.468176825225
+Topic #86:
+Xenopus: 0.692021026496, George_I_of_Great_Britain: 0.634242467233, Edward_VI_of_England: 0.607018636712, Edward_II_of_England: 0.599333097792, Edward_III_of_England: 0.585049032185, James_II_of_England: 0.560922534996, Charles_II_of_England: 0.556756379281, John,_King_of_England: 0.54060153796, Henry_V_of_England: 0.529476074387, Richard_II_of_England: 0.528448266423
+Topic #12:
+Neo-Assyrian_Empire: 0.902413377442, Akkadian_Empire: 0.774956346835, Song_dynasty: 0.711800818203, Ayyubid_dynasty: 0.700573588769, Parthian_Empire: 0.692324358634, Bithynia: 0.637826048121, Dahomey: 0.625072871461, Kingdom_of_Aksum: 0.616576689641, Achaean_League: 0.597875706572, Republic_of_Venice: 0.59642794883
+Topic #31:
+Rockefeller: 0.301, Sublime_(philosophy): 0.278333333333, Object_(computer_science): 0.273636363636, Arnolfini_Portrait: 0.263684210526, Acadia_National_Park: 0.2404, Bismarck_(board_game): 0.200666666667, Anastasio_Somoza_Debayle: 0.187273194152, Fibonacci_number: 0.182727272727, Yuri_Dolgorukiy: 0.169573190426, Because_I_could_not_stop_for_Death: 0.1675
+Topic #59:
+Mount_Whitney: 0.711943413687, Cannery_Row: 0.416206728554, Mount_Mitchell: 0.331011147858, Appalachian_Trail: 0.327136937802, Death_Valley: 0.323911663783, Denali: 0.299247325576, Pines_of_Rome: 0.282307692308, Crater_Lake: 0.278596784723, Strange_quark: 0.273636363636, Mount_Logan: 0.273209708388
 Topic #96:
-168_(number): 0.505, 117_(number): 0.505, 127_(number): 0.458377433513, Enthalpy: 0.329244176059, Bifröst: 0.320662201417, Amide: 0.306401016355, Photoelectric_effect: 0.297196765266, Archaea: 0.292319556859, Sister_Mary_Ignatius_Davies: 0.284207785188, Lake_Winnipeg: 0.251747507339
+117_(number): 0.505, 168_(number): 0.505, 127_(number): 0.470549520547, Enthalpy: 0.339127990501, Archaea: 0.32117887928, Amide: 0.319159472702, Bifröst: 0.311874271324, Photoelectric_effect: 0.300102908514, Sister_Mary_Ignatius_Davies: 0.284700756503, Uranus: 0.25461097932
 Topic #99:
-Curvatures_of_the_stomach: 0.736377662332, Epidermis: 0.700051767009, Small_intestine: 0.615870810573, Maslow's_hierarchy_of_needs: 0.579210526316, Spleen: 0.539333159817, The_Compleat_Angler: 0.501, Medulla_oblongata: 0.500333332508, Thymus: 0.479583906414, Cornea: 0.478365543021, Pancreas: 0.467333326867
+Curvatures_of_the_stomach: 0.737045454146, Epidermis: 0.700071500581, Small_intestine: 0.61595996919, Maslow's_hierarchy_of_needs: 0.579210526316, Spleen: 0.543612285474, The_Compleat_Angler: 0.501, Medulla_oblongata: 0.500333333333, Cornea: 0.48043088492, Thymus: 0.480425190214, Pancreas: 0.467333333333
 Topic #26:
-Judicial_review: 0.769696652055, Valhalla: 0.662667176434, Angrboða: 0.548060619159, Hel_(being): 0.538464168352, Ymir: 0.505, Geirröd: 0.505, Hel_(location): 0.492261108923, Eminent_domain: 0.395965644067, Sestina: 0.374770621831, Taliban: 0.365333201318
+Judicial_review: 0.769828199011, Valhalla: 0.621825838307, Angrboða: 0.540307389098, Hel_(being): 0.53639856108, Ymir: 0.505, Geirröd: 0.505, Hel_(location): 0.489730556863, Eminent_domain: 0.400215021464, Sestina: 0.385668616955, Taliban: 0.363110542801
 Topic #22:
-Sickle_Cell_Disease_Association_of_America: 0.461194908362, University_of_Michigan: 0.459094205928, Green_Eggs_and_Ham: 0.430694846387, Lake_Pontchartrain: 0.410706683761, Assassination_of_Archduke_Franz_Ferdinand_of_Austria: 0.403057827011, Black_Friday_(1869): 0.400517106485, Great_Chicago_Fire: 0.325846343627, Mayor_of_Chicago: 0.318560964989, Oklahoma_State_University–Stillwater: 0.277703402507, University_of_Kansas: 0.268179716167
+Sickle_Cell_Disease_Association_of_America: 0.460610284683, University_of_Michigan: 0.451429680498, Green_Eggs_and_Ham: 0.426125459599, Lake_Pontchartrain: 0.409358409951, Black_Friday_(1869): 0.39461380541, Assassination_of_Archduke_Franz_Ferdinand_of_Austria: 0.392685123682, Great_Chicago_Fire: 0.359306044848, Mayor_of_Chicago: 0.31669244166, Oklahoma_State_University–Stillwater: 0.273803381671, University_of_Kansas: 0.263987003124
 Topic #33:
-Battle_of_the_Coral_Sea: 0.628803909766, Guadalcanal_Campaign: 0.570199129767, Big_Bertha_(howitzer): 0.499266424442, Casablanca_Conference: 0.485158126519, Burma_Road: 0.47439750561, Treaty_of_Karlowitz: 0.47094821116, Battle_of_Midway: 0.437388374488, Normandy_landings: 0.433449248937, Gallipoli_Campaign: 0.411842625771, Battle_of_Leyte_Gulf: 0.386741954556
-Topic #54:
-Kellogg–Briand_Pact: 0.681101683205, Alfonso_XIII_of_Spain: 0.642832246658, Leopold_II_of_Belgium: 0.617368850738, Kyoto_Protocol: 0.604295311474, Haile_Selassie: 0.593941796844, Josip_Broz_Tito: 0.583247633742, Treaty_of_Aix-la-Chapelle_(1748): 0.577850034986, Pedro_II_of_Brazil: 0.565963466167, Ban_Ki-moon: 0.522296443693, Bernard_Montgomery: 0.502633495455
+Battle_of_the_Coral_Sea: 0.599517444291, Guadalcanal_Campaign: 0.577165769487, Big_Bertha_(howitzer): 0.499459665867, Casablanca_Conference: 0.49652445576, Treaty_of_Karlowitz: 0.482531208071, Burma_Road: 0.476150438346, Normandy_landings: 0.445867690694, Battle_of_Midway: 0.430712004736, Gallipoli_Campaign: 0.414109013642, Battle_of_Leyte_Gulf: 0.395075343389
 Topic #94:
-Anomalous_monism: 0.585488861892, Diamagnetism: 0.413722073288, Yevgeny_Zamyatin: 0.372647096361, October_Manifesto: 0.35725772585, Nuclear_fission: 0.352026410621, Lead: 0.329605244802, Bayes'_theorem: 0.313597827785, Vyacheslav_Molotov: 0.310442363221, Vladimir_Lenin: 0.304687673269, Oblomov: 0.295603600265
+Anomalous_monism: 0.586363367895, Diamagnetism: 0.417235841209, Yevgeny_Zamyatin: 0.374437595477, October_Manifesto: 0.360229783083, Bayes'_theorem: 0.334385450327, Lead: 0.33078605469, Vyacheslav_Molotov: 0.313090988696, Vladimir_Lenin: 0.305908841852, Oblomov: 0.302640636721, Nikita_Khrushchev: 0.28339197808
 Topic #29:
-Radiation_pressure: 0.335, Ada_(programming_language): 0.315988285693, Simpson's_rule: 0.288025890524, Lisp_(programming_language): 0.265678789501, Taiga: 0.265, Perl: 0.259013887411, Encryption: 0.2525, Fortran: 0.249190468013, Symphonies_(Bruckner): 0.223333333333, A_Modest_Proposal: 0.2202
+Radiation_pressure: 0.335, Ada_(programming_language): 0.320711291056, Simpson's_rule: 0.287281785246, Lisp_(programming_language): 0.26561875002, Taiga: 0.265, Perl: 0.259046459725, Encryption: 0.2525, Fortran: 0.249669197077, Symphonies_(Bruckner): 0.223333333333, A_Modest_Proposal: 0.2202
 Topic #47:
-Vega: 0.836160676009, Pleiades: 0.744584881131, Polaris: 0.643078055582, Sirius: 0.605119501262, Rigel: 0.577850867375, Barnard's_Star: 0.532720761268, Cognitive_dissonance: 0.53, Arcturus: 0.529753475237, Sales_tax: 0.440449818676, Torii: 0.397983810709
+Vega: 0.839718777067, Pleiades: 0.819118221179, Polaris: 0.655343844362, Sirius: 0.624832514536, Rigel: 0.601109070311, Arcturus: 0.541004267715, Barnard's_Star: 0.535841203617, Cognitive_dissonance: 0.53, Sales_tax: 0.446266076092, Torii: 0.427383084886
 Topic #14:
-Arkansas_River: 0.889035726949, Red_River_of_the_South: 0.773078869415, Pecos_River: 0.772230082554, Gambia_River: 0.662162989912, Wabash_River: 0.652230414625, Snake_River: 0.644755227396, Volta_River: 0.640149450003, Susquehanna_River: 0.599420366689, Gila_River: 0.590786197714, Red_River_of_the_North: 0.565658257183
+Arkansas_River: 0.889235869716, Red_River_of_the_South: 0.772787374917, Pecos_River: 0.772549565215, Wabash_River: 0.666482753218, Gambia_River: 0.661287987379, Snake_River: 0.644093710998, Volta_River: 0.638712410987, Susquehanna_River: 0.599494527066, Gila_River: 0.590445728366, Red_River_of_the_North: 0.565296935168
+Topic #54:
+Kellogg–Briand_Pact: 0.67860978508, Alfonso_XIII_of_Spain: 0.638949949065, Leopold_II_of_Belgium: 0.616897260542, Kyoto_Protocol: 0.601045441107, Haile_Selassie: 0.59058069708, Josip_Broz_Tito: 0.57606589473, Treaty_of_Aix-la-Chapelle_(1748): 0.572512209671, Pedro_II_of_Brazil: 0.563712597222, Ban_Ki-moon: 0.517044345228, Bernard_Montgomery: 0.499691181681
 Topic #79:
-Birefringence: 0.445555555556, Sponge: 0.3505, Red_Queen_hypothesis: 0.336666666667, Echinoderm: 0.3005, Sociobiology: 0.2895575827, Alan_Paton: 0.289020070914, Darwin's_finches: 0.283163426675, Blood_Knot: 0.250625, Hippopotamus: 0.232472275209, Speciation: 0.223333333333
+Birefringence: 0.445555555556, Sponge: 0.3505, Red_Queen_hypothesis: 0.336666666667, Echinoderm: 0.3005, Sociobiology: 0.286431173083, Alan_Paton: 0.28517295886, Darwin's_finches: 0.277871836253, Blood_Knot: 0.250625, Hippopotamus: 0.227926592156, Speciation: 0.223333333333
 Topic #37:
-Data_buffer: 0.7525, Shale: 0.5025, Homo_habilis: 0.422607067094, Buffer_overflow: 0.37625, Australopithecus_africanus: 0.373746012133, Homo_erectus: 0.344600192174, Australopithecus: 0.339913366593, Taylor_Swift: 0.335849260264, Limestone: 0.289778469543, Obsidian: 0.280804216276
+Data_buffer: 0.7525, Shale: 0.5025, Homo_habilis: 0.430564607059, Australopithecus_africanus: 0.387768985616, Buffer_overflow: 0.37625, Homo_erectus: 0.350242192494, Taylor_Swift: 0.348233992647, Australopithecus: 0.344613354281, Limestone: 0.289739474503, Obsidian: 0.283744541049
 Topic #43:
-Oncogene: 0.67, Portrait_of_Antoine-Laurent_Lavoisier_and_his_wife: 0.550748596684, Wh-movement: 0.445264249002, Habeas_corpus: 0.31382951658, Danse_Macabre: 0.273181818182, Ecce_homo: 0.247870983997, Phil_Mickelson: 0.244439088489, Uncle_Tom: 0.240278869894, Quo_vadis?: 0.236279178396, Fauvism: 0.231091088472
+Oncogene: 0.67, Portrait_of_Antoine-Laurent_Lavoisier_and_his_wife: 0.556661076649, Wh-movement: 0.445555555556, Habeas_corpus: 0.315811321372, Danse_Macabre: 0.273181818182, Quo_vadis?: 0.254036941012, Ecce_homo: 0.253143577687, Phil_Mickelson: 0.246113618292, Uncle_Tom: 0.244277159426, Fauvism: 0.231083115202
 Topic #73:
-The_Painter's_Studio: 0.501183240256, Barkhausen_effect: 0.464148535991, Hamidian_massacres: 0.379034610815, A_Clean,_Well-Lighted_Place: 0.37863157792, Archimedes'_principle: 0.37625, El_Escorial: 0.347961989226, Blenheim_Palace: 0.267761248565, Cepheid_variable: 0.25125, Halogen: 0.250625, A_Burial_At_Ornans: 0.24087195456
+The_Painter's_Studio: 0.503892966406, Barkhausen_effect: 0.483290842814, A_Clean,_Well-Lighted_Place: 0.382351059382, Hamidian_massacres: 0.378697737792, Archimedes'_principle: 0.37625, El_Escorial: 0.352206790082, Blenheim_Palace: 0.267616638326, Cepheid_variable: 0.25125, Halogen: 0.250625, A_Burial_At_Ornans: 0.24197508585
 Topic #7:
-The_House_of_Mirth: 0.870175425568, McTeague: 0.833138226149, Pudd'nhead_Wilson: 0.821987214215, Looking_Backward: 0.821027917572, Ethan_Frome: 0.810497063407, The_House_of_the_Seven_Gables: 0.808241233894, Gravity's_Rainbow: 0.803766981047, Heart_of_Darkness: 0.800407140779, Naked_Lunch: 0.774472246283, Saturday_Night_and_Sunday_Morning: 0.76506401783
+The_House_of_Mirth: 0.869277236949, McTeague: 0.832743665651, Pudd'nhead_Wilson: 0.821946793538, Looking_Backward: 0.82184587043, The_House_of_the_Seven_Gables: 0.818127158407, Gravity's_Rainbow: 0.802205124852, Heart_of_Darkness: 0.79352138296, Ethan_Frome: 0.79134428804, Naked_Lunch: 0.774868207216, Saturday_Night_and_Sunday_Morning: 0.764219506649
 Topic #6:
-Hector: 0.938125, Tithonus: 0.900999999998, Calchas: 0.881187254784, Pius: 0.858571428571, Laocoön: 0.857857142857, Siegfried: 0.819090909091, Micah: 0.819090909091, Ferdinand: 0.808076923077, Alphons: 0.77699166022, Laomedon: 0.758565643889
+Hector: 0.938125, Tithonus: 0.901, Pius: 0.858571428449, Laocoön: 0.857857142816, Micah: 0.819090909081, Siegfried: 0.819090909078, Ferdinand: 0.808076923077, Alphons: 0.773656045355, Calchas: 0.762210949189, Laomedon: 0.75806581408
 Topic #35:
-Andrea_Chénier: 0.712058423821, Concerto_for_Orchestra: 0.616153846154, The_Road_Not_Taken: 0.453593650291, Amelia_Goes_to_the_Ball: 0.424523734081, The_Bacchae: 0.410125347928, Willie_Stark: 0.407896920814, William_Tell_(opera): 0.40288002494, La_traviata: 0.393456455042, Anna_Bolena: 0.385244990639, Wozzeck: 0.380669093851
+Andrea_Chénier: 0.71604538497, Concerto_for_Orchestra: 0.616153846154, The_Road_Not_Taken: 0.460215308021, Amelia_Goes_to_the_Ball: 0.414557147915, Willie_Stark: 0.411068151812, The_Bacchae: 0.408982519438, William_Tell_(opera): 0.395896177727, La_traviata: 0.393144531447, Anna_Bolena: 0.381592934735, Wozzeck: 0.381509270089
 Topic #46:
-Transform_fault: 0.808673695755, Train: 0.686195862529, L.H.O.O.Q.: 0.527340574328, Anatomy_of_Criticism: 0.462499184013, Beauty_and_the_Beast: 0.453095907165, Active_galactic_nucleus: 0.440187536099, Mural: 0.4356595632, Centaur: 0.423726650258, Hegemony: 0.423446530832, Extinction: 0.421249358232
+Transform_fault: 0.80881052485, Train: 0.683982638551, L.H.O.O.Q.: 0.526107475729, Anatomy_of_Criticism: 0.464119575978, Beauty_and_the_Beast: 0.450340482788, Mural: 0.447651873746, Active_galactic_nucleus: 0.44281641048, Ballet: 0.429974854138, Hegemony: 0.426860029739, Centaur: 0.426473337989
 Topic #40:
-Demand: 0.5025, Reaction_rate_constant: 0.336666666667, Law_of_sines: 0.295527640108, The_Ox-Bow_Incident: 0.295461969885, Michaelis–Menten_kinetics: 0.29517077673, To_an_Athlete_Dying_Young: 0.25357403663, Demand_curve: 0.2525, Selma,_Alabama: 0.244681407706, Yoknapatawpha_County: 0.222160398377, Tyrosine_kinase: 0.217991628888
+Demand: 0.5025, Reaction_rate_constant: 0.336666666667, Law_of_sines: 0.305268373106, The_Ox-Bow_Incident: 0.29714662298, Michaelis–Menten_kinetics: 0.295043213393, Demand_curve: 0.2525, To_an_Athlete_Dying_Young: 0.25125, Selma,_Alabama: 0.250122741581, Yoknapatawpha_County: 0.227993324959, Tyrosine_kinase: 0.220364542128
 Topic #41:
-Phase_rule: 0.835, Le_Chatelier's_principle: 0.7525, Buffer_solution: 0.668333333333, Alloy: 0.5025, Hess's_law: 0.501666666667, Laws_of_thermodynamics: 0.501666666667, Activity_coefficient: 0.416879778512, Violin_sonata: 0.402, Micelle: 0.402, Huffman_coding: 0.347878619904
+Phase_rule: 0.835, Le_Chatelier's_principle: 0.7525, Buffer_solution: 0.668333333333, Alloy: 0.5025, Hess's_law: 0.501666666667, Laws_of_thermodynamics: 0.501666666667, Activity_coefficient: 0.415254791704, Violin_sonata: 0.402, Micelle: 0.402, Hampton_Roads_Conference: 0.347579790597
 Topic #55:
-Hypha: 0.827821032774, Particle_in_a_box: 0.825820380581, Distance: 0.678667015067, Mazurkas_(Chopin): 0.639002204955, Argonauts: 0.629813570035, Fertilisation: 0.582320021782, The_Interpretation_of_Cultures: 0.57711368668, Cycloid: 0.570957806889, Icarus: 0.558034270072, Chloroplast: 0.517218816593
+Hypha: 0.841112443966, Particle_in_a_box: 0.825902209699, Distance: 0.681893327198, Argonauts: 0.656267880661, Mazurkas_(Chopin): 0.635160767362, Fertilisation: 0.606486075021, The_Interpretation_of_Cultures: 0.575142476536, Cycloid: 0.572154470199, Icarus: 0.559550584353, Integral: 0.536235748174
 Topic #30:
-Crown_ether: 0.67, Roger_Clemens: 0.590337319752, Derek_Jeter: 0.424896873837, Robin_Yount: 0.408390642613, Yogi_Berra: 0.363688524377, Eephus_pitch: 0.336666666667, Pete_Rose: 0.331269248278, Pelé: 0.28978957453, Roger_Maris: 0.276626417697, Albert_Pujols: 0.260959498989
+Crown_ether: 0.669999999677, Roger_Clemens: 0.59225154731, Derek_Jeter: 0.436736134403, Robin_Yount: 0.422328590007, Yogi_Berra: 0.365332384711, Pete_Rose: 0.344515652437, Eephus_pitch: 0.336666666667, Pelé: 0.290888342432, Albert_Pujols: 0.287260423638, Roger_Maris: 0.277342497438
 Topic #1:
-Gideon_v._Wainwright: 0.947595235473, Youngstown_Sheet_&_Tube_Co._v._Sawyer: 0.916591830793, Bowers_v._Hardwick: 0.855577379116, McCulloch_v._Maryland: 0.835783153193, Griswold_v._Connecticut: 0.809538618311, Lecompton_Constitution: 0.760943170363, Baker_v._Carr: 0.756995497766, Beta_sheet: 0.7525, Territories_of_the_United_States_on_stamps: 0.750291198106, Gag_rule: 0.747702604947
+Gideon_v._Wainwright: 0.947350830395, Youngstown_Sheet_&_Tube_Co._v._Sawyer: 0.916715928852, Bowers_v._Hardwick: 0.855452533027, McCulloch_v._Maryland: 0.835205633629, Griswold_v._Connecticut: 0.808462247913, Baker_v._Carr: 0.75691997689, Beta_sheet: 0.7525, Territories_of_the_United_States_on_stamps: 0.749923723873, Gag_rule: 0.748011404191, Schenck_v._United_States: 0.730691073277
 Topic #4:
-Mean: 0.7525, The_Bathers_(Renoir): 0.420753220924, Boyle's_law: 0.411453880004, Atahualpa: 0.386897097032, Jugurtha: 0.362915910999, Caracalla: 0.361993414758, Integer: 0.334, Gawain: 0.326704877645, Parity_(mathematics): 0.287142857143, The_Blithedale_Romance: 0.284122699088
+Mean: 0.7525, Boyle's_law: 0.427275633625, The_Bathers_(Renoir): 0.417623877788, Atahualpa: 0.401176502699, Jugurtha: 0.360153612282, Caracalla: 0.356894678702, Integer: 0.334, Gawain: 0.333132283497, The_Blithedale_Romance: 0.296100758545, Parity_(mathematics): 0.287142857143
 Topic #58:
-John_Sherman: 0.870518518319, William_McKinley: 0.845697028816, Calvin_Coolidge: 0.821406893052, Thaddeus_Stevens: 0.801754659734, Lewis_Cass: 0.773683130753, Barnburners_and_Hunkers: 0.769332103689, Alben_W._Barkley: 0.765718091591, Andrew_Johnson: 0.761409704394, Warren_G._Harding: 0.760874905639, John_C._Calhoun: 0.752825328274
+John_Sherman: 0.846704847204, William_McKinley: 0.821600383204, Thaddeus_Stevens: 0.799064739155, Calvin_Coolidge: 0.795796221071, Andrew_Johnson: 0.773246600446, Barnburners_and_Hunkers: 0.769242754394, Lewis_Cass: 0.767538756383, Alben_W._Barkley: 0.762529104741, Warren_G._Harding: 0.75285157164, John_C._Calhoun: 0.752695792467
 Topic #74:
-Tet_Offensive: 0.252749614521, Affair_of_the_Spanish_Marriages: 0.217204246371, Ngo_Dinh_Diem: 0.214649500153, Gadsden_Purchase: 0.206232704004, Heimdallr: 0.202, Alberto_Ginastera: 0.174761904762, Frigg: 0.160864891256, Che_Guevara: 0.157394175249, Kim_(novel): 0.148359036917, Barcarolle: 0.126680870623
+Tet_Offensive: 0.252183744682, Affair_of_the_Spanish_Marriages: 0.215, Ngo_Dinh_Diem: 0.213746230216, Gadsden_Purchase: 0.206005658833, Heimdallr: 0.201999999793, Alberto_Ginastera: 0.174761904762, Frigg: 0.1604, Che_Guevara: 0.156302083333, Kim_(novel): 0.147960850342, Barcarolle: 0.125416666667
 Topic #91:
-Scatter_plot: 0.751249999898, Portal_(video_game): 0.53356961905, The_Legend_of_Zelda:_Skyward_Sword: 0.510890216488, Assassin's_Creed: 0.4863348254, Pac-Man: 0.467234052304, BioShock_2: 0.46127620129, Bismarck_(board_game): 0.455542772259, BioShock: 0.431381834199, Minecraft: 0.349521645277, The_Legend_of_Zelda:_Ocarina_of_Time: 0.3361049192
+Scatter_plot: 0.75125, Portal_(video_game): 0.536352507794, The_Legend_of_Zelda:_Skyward_Sword: 0.515844498669, Assassin's_Creed: 0.49145055033, Pac-Man: 0.468132150438, BioShock_2: 0.466149445827, Bismarck_(board_game): 0.454490200837, BioShock: 0.43758087763, Minecraft: 0.351578090667, The_Legend_of_Zelda:_Ocarina_of_Time: 0.338096342573
 Topic #97:
-Symphony_No._4_(Brahms): 0.885192134331, Symphony_No._4_(Tchaikovsky): 0.784346078545, Piano_Sonata_No._14_(Beethoven): 0.771676320944, Piano_Sonata_No._2_(Chopin): 0.740322075596, Minute_Waltz: 0.732865619141, Symphonies_by_Pyotr_Ilyich_Tchaikovsky: 0.731449296924, Prélude_à_l'après-midi_d'un_faune: 0.716943398785, Academic_Festival_Overture: 0.715764263205, Piano_Sonata_No._23_(Beethoven): 0.714957437876, Cello_Concerto_(Dvořák): 0.708168744491
+Symphony_No._4_(Brahms): 0.884870701329, Symphony_No._4_(Tchaikovsky): 0.784467378325, Piano_Sonata_No._14_(Beethoven): 0.771937055739, Piano_Sonata_No._2_(Chopin): 0.74010710729, Symphonies_by_Pyotr_Ilyich_Tchaikovsky: 0.731522383047, Academic_Festival_Overture: 0.720734632458, Prélude_à_l'après-midi_d'un_faune: 0.717769336576, Piano_Sonata_No._23_(Beethoven): 0.714844846397, Rhapsody_on_a_Theme_of_Paganini: 0.708442703699, Cello_Concerto_(Dvořák): 0.708315161912
 Topic #32:
-Bulk_modulus: 0.802, Diffraction: 0.802, Adrenal_gland_disorder: 0.7525, Set_(mathematics): 0.75125, Spin_(physics): 0.75125, Contraposition: 0.705785400655, Meursault: 0.601, Vector_potential: 0.572117854654, Lamb_shift: 0.556666666667, London_symphonies: 0.546565325019
+Bulk_modulus: 0.802, Diffraction: 0.802, Adrenal_gland_disorder: 0.7525, Set_(mathematics): 0.75125, Spin_(physics): 0.75125, Contraposition: 0.708443340211, Meursault: 0.601, Vector_potential: 0.572239734468, Lamb_shift: 0.556666666667, London_symphonies: 0.548201838328
 Topic #85:
-Barbizon_school: 0.365352731597, Fountain: 0.284731907671, Salon_des_Refusés: 0.279760875309, Hippolyte_Fizeau: 0.27215160574, Corona: 0.263943285519, Jean_Buridan: 0.255905095091, River_delta: 0.250780753843, Pierre_Curie: 0.236334054547, Aurora: 0.233783250314, Sentimental_Education: 0.223948878768
+Barbizon_school: 0.365765058486, Fountain: 0.280015251963, Salon_des_Refusés: 0.278333333333, Hippolyte_Fizeau: 0.270638545391, Corona: 0.261331225033, Jean_Buridan: 0.256515163487, River_delta: 0.250625, Pierre_Curie: 0.234899156202, Aurora: 0.222711588057, Sentimental_Education: 0.222592592593
 Topic #49:
-Magic: 0.934, Copperhead: 0.934, Robert_Herrick: 0.934, Work: 0.934, Fruit_fly: 0.934, Python: 0.934, Castor: 0.929285714286, Field: 0.929285714286, Normal: 0.929285714286, Spanish: 0.929285714286
+Magic: 0.934, Copperhead: 0.934, Work: 0.934, Fruit_fly: 0.934, Python: 0.934, Robert_Herrick: 0.933999998167, Field: 0.929285714286, Normal: 0.929285714286, Spanish: 0.929285714286, Jonathan_Edwards: 0.929285714286
 Topic #10:
-Outer_core: 0.835, Thermosphere: 0.802, The_Milkmaid_(Vermeer): 0.743715948285, Mantle_(geology): 0.715714285714, Excalibur: 0.683724044396, The_Feast_of_the_Gods: 0.596321103349, Nocturne_in_Black_and_Gold_–_The_Falling_Rocket: 0.577383738055, View_of_Delft: 0.573069531406, Verb: 0.564482026749, Le_Déjeuner_sur_l’herbe: 0.528277340555
+Outer_core: 0.835, Thermosphere: 0.802, Mantle_(geology): 0.715714285714, The_Milkmaid_(Vermeer): 0.700804414437, Excalibur: 0.618837525088, The_Feast_of_the_Gods: 0.595966354795, Nocturne_in_Black_and_Gold_–_The_Falling_Rocket: 0.580822093568, View_of_Delft: 0.56890952047, Verb: 0.564510464303, Le_Déjeuner_sur_l’herbe: 0.531412858521
 Topic #71:
-Albany_Regency: 0.417227998636, Adirondack_Mountains: 0.381428571429, Goldman_Sachs: 0.329272892491, Hudson_River: 0.29303057196, Xkcd: 0.276001024831, Finger_Lakes: 0.261086956522, Triangle_Shirtwaist_Factory_fire: 0.252928597053, Provincetown_Players: 0.250215933061, Mount_Mitchell: 0.246382460479, New_York_Knicks: 0.240190116792
+Albany_Regency: 0.417245180959, Adirondack_Mountains: 0.381428571429, Goldman_Sachs: 0.332957740729, Hudson_River: 0.294236057693, Xkcd: 0.282061638909, Finger_Lakes: 0.261086956522, Provincetown_Players: 0.25419238301, Triangle_Shirtwaist_Factory_fire: 0.253755444521, Mount_Mitchell: 0.241922415534, New_York_Knicks: 0.241233157789
 Topic #18:
-Modern_Family: 0.773182734458, Scrubs_(TV_series): 0.765554329348, Arrested_Development_(TV_series): 0.665947193176, Breaking_Bad: 0.623727562998, Bones_(TV_series): 0.618612358479, Avatar:_The_Last_Airbender: 0.612339118533, Rocko's_Modern_Life: 0.559135325816, Friends: 0.552016936648, My_Little_Pony:_Friendship_Is_Magic: 0.527103203456, Parks_and_Recreation: 0.508231779286
+Modern_Family: 0.770327095755, Scrubs_(TV_series): 0.7512677183, Arrested_Development_(TV_series): 0.669153990975, Breaking_Bad: 0.625054316176, Bones_(TV_series): 0.619211169227, Avatar:_The_Last_Airbender: 0.61279135293, Rocko's_Modern_Life: 0.560216648185, Friends: 0.551255815412, My_Little_Pony:_Friendship_Is_Magic: 0.523124245635, Parks_and_Recreation: 0.509021680336
 Topic #84:
-Dies_Irae: 0.801, 1972_Nixon_visit_to_China: 0.7525, After_the_quake: 0.7525, The_Road_To_Mecca: 0.7525, Carbon_reactions_(photosynthesis): 0.7525, Muse: 0.7525, Angels_in_America:_A_Gay_Fantasia_on_National_Themes: 0.7525, National_Association_for_the_Advancement_of_Colored_People: 0.7525, Avesta: 0.7525, Ajax_(mythology): 0.7525
+Dies_Irae: 0.801, The_Road_To_Mecca: 0.7525, Angels_in_America:_A_Gay_Fantasia_on_National_Themes: 0.7525, Clayton_Antitrust_Act: 0.7525, Avesta: 0.7525, Punjab_(region): 0.7525, National_Labor_Relations_Act: 0.7525, 1972_Nixon_visit_to_China: 0.7525, After_the_quake: 0.7525, Jay_Z: 0.7525
 Topic #34:
-Derrick_Rose: 0.929224138918, LeBron_James: 0.807968400782, Dwight_Howard: 0.775413105955, Michael_Jordan: 0.691621385945, Dwyane_Wade: 0.685645784837, Scottie_Pippen: 0.60819930977, Kobe_Bryant: 0.604948172215, Steve_Nash: 0.540148696525, The_Idea_of_Order_at_Key_West: 0.402, Rick_Pitino: 0.383767003102
+Derrick_Rose: 0.899422023179, LeBron_James: 0.805843608002, Dwight_Howard: 0.769735139843, Michael_Jordan: 0.694074076527, Dwyane_Wade: 0.68781658055, Scottie_Pippen: 0.613402379736, Kobe_Bryant: 0.584481000149, Steve_Nash: 0.545927407633, The_Idea_of_Order_at_Key_West: 0.402, Rick_Pitino: 0.386370425152
 Topic #63:
-Edmond_Dantès: 0.83270365426, Hester_Prynne: 0.771081762663, Emma_Woodhouse: 0.747717382846, Arawn: 0.668333333333, Quasimodo: 0.650827960861, Ghost_(Hamlet): 0.582628128379, Ariel_(Disney): 0.577385288756, Romeo: 0.538769347092, The_Imp_of_the_Perverse_(short_story): 0.535562422426, Rose: 0.529519296835
+Hester_Prynne: 0.77524386292, Emma_Woodhouse: 0.74745562788, Edmond_Dantès: 0.724327874637, Arawn: 0.668333333333, Ariel_(Disney): 0.57798574253, Quasimodo: 0.542210656371, Rose: 0.529276068869, Polonius: 0.519847018246, A_Clean,_Well-Lighted_Place: 0.508760051729, Captain_Ahab: 0.508539055712
 Topic #78:
-Heap_(data_structure): 0.761037851047, Confession: 0.758083959253, Apatite: 0.701, Calcite: 0.636249147985, Continuous_function: 0.623558914755, Azide: 0.598274707559, Nickel: 0.58180580182, Corundum: 0.571904761905, Stack_(abstract_data_type): 0.566112468388, Skepticism: 0.56370656538
+Heap_(data_structure): 0.760747746425, Confession: 0.759008374982, Apatite: 0.701, Calcite: 0.636012534578, Continuous_function: 0.623252125631, Azide: 0.59805797444, Nickel: 0.577200268527, Corundum: 0.571904761905, Stack_(abstract_data_type): 0.565648770986, Skepticism: 0.552049473817
 Topic #8:
-C_major: 0.616055873826, Acentric_factor: 0.490278875192, A_Heartbreaking_Work_of_Staggering_Genius: 0.414521248393, Assassin_(game): 0.411857018153, Boxer_(Animal_Farm): 0.376052081352, Hawking_radiation: 0.369509650737, Fisher–Yates_shuffle: 0.358624040203, The_Wasps: 0.339965603752, Book_of_Job: 0.338771579253, Angkor: 0.333550272343
+C_major: 0.621758398298, Acentric_factor: 0.524699092174, Assassin_(game): 0.434551644044, A_Heartbreaking_Work_of_Staggering_Genius: 0.422963986747, Boxer_(Animal_Farm): 0.389364136634, Hawking_radiation: 0.384769555562, Fisher–Yates_shuffle: 0.369864929237, Book_of_Job: 0.350533557954, Maunder_Minimum: 0.348769248469, The_Wasps: 0.344088020066
 Topic #23:
-Stationary_front: 0.705533182023, Bishop_(Latter_Day_Saints): 0.338936559144, The_Open_Society_and_Its_Enemies: 0.323823529412, Parables_of_Jesus: 0.30033862702, Belshazzar's_feast: 0.299677824146, Pontiac's_War: 0.296901466713, Mateo_Falcone: 0.25125, Thermodynamic_temperature: 0.25125, The_Phenomenology_of_Spirit: 0.250625, Bacon's_Rebellion: 0.247705022318
+Stationary_front: 0.707033178064, Bishop_(Latter_Day_Saints): 0.336363458572, The_Open_Society_and_Its_Enemies: 0.323823529412, Parables_of_Jesus: 0.299239242199, Pontiac's_War: 0.297737779739, Belshazzar's_feast: 0.283406445853, Mateo_Falcone: 0.25125, Thermodynamic_temperature: 0.25125, The_Phenomenology_of_Spirit: 0.250625, Bacon's_Rebellion: 0.249286273445
 Topic #19:
-Lake_Tanganyika: 0.60299718406, Lake_Huron: 0.509381228959, Lake_Okeechobee: 0.507959450473, Lake_Malawi: 0.451292517485, Everglades: 0.4380995609, Lake_Superior: 0.348483369685, Loch_Ness: 0.342327830645, Lake_Victoria: 0.340469669239, Lake_Tahoe: 0.323078853355, Lake_Chad: 0.252515608086
+Lake_Tanganyika: 0.612212683404, Lake_Okeechobee: 0.519807719851, Lake_Huron: 0.517784128827, Lake_Malawi: 0.459412438984, Everglades: 0.442120456534, Lake_Nicaragua: 0.372964624072, Lake_Superior: 0.360012421079, Lake_Victoria: 0.356822212746, Loch_Ness: 0.344922971152, Lake_Tahoe: 0.332944919025
 Topic #75:
-Diffraction_topography: 0.67, Cepheid_variable: 0.62625, Great_Attractor: 0.557702650994, Battle_of_San_Jacinto: 0.356514725538, Ubiquitin: 0.335, Cozumel_Island_coati: 0.314571428571, Ohm's_law: 0.286428571429, TP53: 0.285241116483, Dirac_equation: 0.267333333333, Histone: 0.2525
+Diffraction_topography: 0.67, Cepheid_variable: 0.62625, Great_Attractor: 0.56179128626, Battle_of_San_Jacinto: 0.36255601619, Ubiquitin: 0.335, Cozumel_Island_coati: 0.314571428571, Ohm's_law: 0.286428571429, TP53: 0.285800817766, Dirac_equation: 0.267333333333, Histone: 0.2525
 Topic #93:
-Center_of_mass: 0.668333333333, Vasopressin: 0.496716216387, Wheatstone_bridge: 0.455454545455, Maat: 0.438125, Diana_(mythology): 0.306100095572, Charites: 0.304782608696, Deformation_(mechanics): 0.301, Action_(physics): 0.301, Myoglobin: 0.286190492659, Xochiquetzal: 0.28126220945
+Center_of_mass: 0.501666666667, Vasopressin: 0.496961087274, Wheatstone_bridge: 0.455454545455, Maat: 0.438125, Diana_(mythology): 0.306101828969, Charites: 0.304782608696, Deformation_(mechanics): 0.301, Action_(physics): 0.301, Myoglobin: 0.28619047619, Xochiquetzal: 0.281271613411
 Topic #56:
-Byronic_hero: 0.7525, Thelonious_Monk: 0.634280770073, The_Rolling_Stones: 0.523378369182, Queen_(band): 0.508700799697, Coldplay: 0.500669180366, The_Weavers: 0.490011890485, Count_Basie: 0.461647019537, The_Beatles: 0.431383175272, Maroon_5: 0.423867255845, Red_Hot_Chili_Peppers: 0.422572578108
+Byronic_hero: 0.752499999964, Thelonious_Monk: 0.630912568678, The_Rolling_Stones: 0.52640257163, Queen_(band): 0.502096299367, Coldplay: 0.474337399365, The_Weavers: 0.472468558088, Count_Basie: 0.458048722003, The_Beatles: 0.427671463071, Methyl_group: 0.402, Sonnet_sequence: 0.402
 Topic #76:
-Cerebrospinal_fluid: 0.901, Oort_cloud: 0.360896290401, Ceres_(dwarf_planet): 0.326366863022, 4_Vesta: 0.298935428666, Halley's_Comet: 0.255963591255, Augusto_Pinochet: 0.227091659549, Pluto: 0.21901209886, Triton_(moon): 0.209678636863, Mariachi: 0.180260663996, Alberto_Giacometti: 0.179743589744
+Cerebrospinal_fluid: 0.901, Oort_cloud: 0.363183773697, Ceres_(dwarf_planet): 0.331950061438, 4_Vesta: 0.306630988975, Halley's_Comet: 0.255471430332, Augusto_Pinochet: 0.230226142804, Pluto: 0.223037824207, Triton_(moon): 0.217368750095, Alberto_Giacometti: 0.179743589744, Mariachi: 0.178982646002
 Topic #81:
-The_Conversation: 0.810541974794, Bride_of_the_Wind: 0.697905727163, The_Plague_(1992_film): 0.612261208456, Mean_Girls: 0.595579250953, Citizen_Kane: 0.587834933897, BUtterfield_8: 0.56201175548, The_Ox-Bow_Incident: 0.554689550926, Seven_Samurai: 0.552533249056, Dona_Flor_and_Her_Two_Husbands: 0.548124872074, Boogie_Nights: 0.536435844239
+The_Conversation: 0.809301744676, Bride_of_the_Wind: 0.70557379183, The_Plague_(1992_film): 0.611759138929, Citizen_Kane: 0.589861152396, Mean_Girls: 0.586147427184, The_Ox-Bow_Incident: 0.564025260567, BUtterfield_8: 0.56209625325, Seven_Samurai: 0.55336055993, Dona_Flor_and_Her_Two_Husbands: 0.547989269209, Boogie_Nights: 0.535657750885
 Topic #82:
-Availability_heuristic: 0.701, Kind_of_Blue: 0.696535971704, Call_Me_Maybe: 0.66559970635, Won't_Get_Fooled_Again: 0.638470512324, Mr._Tambourine_Man: 0.628815479373, Creep_(Radiohead_song): 0.621856088431, Gangnam_Style: 0.555661567051, Sgt._Pepper's_Lonely_Hearts_Club_Band: 0.464147400564, Friday_(Rebecca_Black_song): 0.337951132557, Red_Queen_hypothesis: 0.336666666667
+Availability_heuristic: 0.701, Kind_of_Blue: 0.686321201874, Call_Me_Maybe: 0.656552975752, Won't_Get_Fooled_Again: 0.645294674406, Mr._Tambourine_Man: 0.632164331958, Creep_(Radiohead_song): 0.61824513488, Gangnam_Style: 0.545383752253, Sgt._Pepper's_Lonely_Hearts_Club_Band: 0.456273842616, Friday_(Rebecca_Black_song): 0.341886242423, Red_Queen_hypothesis: 0.336666666667
 Topic #80:
-Xibalba: 0.412110120626, P-wave: 0.287142857143, Defenestrations_of_Prague: 0.26705611447, Archimedes'_principle: 0.25125, Gordon_Riots: 0.241529425725, Terminal_velocity: 0.235882352941, Bernoulli's_principle: 0.225257454377, Parabola: 0.223333333333, Aside: 0.201, For_Better_or_For_Worse: 0.199612192647
+Xibalba: 0.380730713023, P-wave: 0.287142857011, Defenestrations_of_Prague: 0.262048138584, Archimedes'_principle: 0.25125, Terminal_velocity: 0.235882352941, Gordon_Riots: 0.235320584106, Parabola: 0.223333333333, Bernoulli's_principle: 0.220050059253, Aside: 0.201, For_Better_or_For_Worse: 0.1997607753
 Topic #95:
-Stamen: 0.364545454545, Sprung_rhythm: 0.321418649033, Albertosaurus: 0.27525, Pheromone: 0.25125, Cytokinin: 0.25125, Raven: 0.242305403875, Triceratops: 0.23365687931, Estrogen: 0.217536231884, Albatross: 0.211052631579, Testosterone: 0.207011494253
+Stamen: 0.364545454545, Sprung_rhythm: 0.350033192934, Albertosaurus: 0.27525, Pheromone: 0.25125, Cytokinin: 0.25125, Raven: 0.246142673702, Triceratops: 0.233896103896, Estrogen: 0.217536231884, Albatross: 0.211052631579, Testosterone: 0.207011494253

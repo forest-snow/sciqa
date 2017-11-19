@@ -3,8 +3,8 @@ import json
 
 def process_question(text, answer_pool):
 	for answer in answer_pool:
-		sub = answer.replace('_', ' ')
-		text = text.replace(sub, answer)
+		sub = answer.replace('_', ' ').strip()
+		text = text.replace(sub, answer )
 	return text
 
 if __name__ == "__main__":
@@ -30,4 +30,4 @@ if __name__ == "__main__":
 		line['text'] = process_question(line['text'], answer_set)
 
 	with open(args.outfile, 'w') as outfile:
-		json.dump(line, outfile)
+		json.dump(data, outfile)

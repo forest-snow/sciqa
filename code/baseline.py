@@ -72,28 +72,28 @@ def transform_data(data, augment=False, answer_pool=None):
     Science questions, along with 4 answers (3 wrong, 1 correct) are given as input.
     Function transforms data such that each question corresponds to 4 different
     question/answer pairs. These pairs are then transformed into strings which will then
-    be featurized into vectors for further classification.  
+    be featurized into vectors for further classification.
 
     Function also returns labels corresponding to the string representation of each
-    question/answer pair.  If the answer is the correct answer to the question, then 
+    question/answer pair.  If the answer is the correct answer to the question, then
     label is 1; otherwise, 0.
 
     Args:
-        data: each vector in data is in the form 
+        data: each vector in data is in the form
         (question, correct answer index, answer A, answer B, answer C, answer D)
 
         augment: augment data only if true
 
         answer_pool: answers to help augment data
 
-    Returns: 
-        (x,y) where x contains the featurized, transformation of each 
-        vector in data and y contains the corresponding 0-1 labels 
+    Returns:
+        (x,y) where x contains the featurized, transformation of each
+        vector in data and y contains the corresponding 0-1 labels
     """
     x = []
     y = []
     def transform_vector(vector):
-        answers = {'A': vector['answerA'], 'B': vector['answerB'], 'C': vector['answerC'],'D': vector['answerD']} 
+        answers = {'A': vector['answerA'], 'B': vector['answerB'], 'C': vector['answerC'],'D': vector['answerD']}
         for i in answers:
             qa_string = transform_qa_pair(vector['question'], answers[i])
             x.append(qa_string)
@@ -103,25 +103,25 @@ def transform_data(data, augment=False, answer_pool=None):
                 if answer not in answers.values():
                     qa_string = transform_qa_pair(vector['question'], answer)
                     x.append(qa_string)
-                    y.append(0) 
+                    y.append(0)
     for v in data:
         transform_vector(v)
-    return x,y 
+    return x,y
 
 def accuracy(data, prob):
     """
     Given list of probabilities of being correct for every question/answer pair in dataset,
-    function computes accuracy of classification by comparing the correct answer with the 
-    answer that is classified as most likely correct.  
+    function computes accuracy of classification by comparing the correct answer with the
+    answer that is classified as most likely correct.
 
     Args:
-        data: each vector in data is in the form 
+        data: each vector in data is in the form
         (question, correct answer index, answer A, answer B, answer C, answer D)
 
         prob: list of probabilities of being correct for every question/answer pair in data
 
-    Returns: 
-        acc: accuracy of classification  
+    Returns:
+        acc: accuracy of classification
     """
     assert 4*len(data) == len(prob), "List of probabilities does not correspond to data"
     correct_inds = []
@@ -140,18 +140,18 @@ def accuracy(data, prob):
 def classify(x_train, y_train, x_test):
     """
     Trains logistic regression classifier on training set and then returns the probabilities
-    of being the correct answer for points in training and test sets. 
+    of being the correct answer for points in training and test sets.
 
     Args:
         x_train: features of training set
         y_train: labels of training set
         x_test: features of test set
 
-    Returns: 
+    Returns:
         y_train_prob: probabilities of training set points
         y_test_prob: probabilities of testing set points
-        lr: classifier 
-    """ 
+        lr: classifier
+    """
     # train classifier
     lr = SGDClassifier(loss='log', penalty='l2', max_iter = 5, tol = None)
     lr.fit(x_train, y_train)
@@ -175,7 +175,7 @@ if __name__ == "__main__":
 
     n_splits = args.k
     kf = KFold(n_splits=n_splits, shuffle = True, random_state = kSEED)
-    train_acc = 0 
+    train_acc = 0
     val_acc = 0
     k = 0
     for train_index, val_index in kf.split(data):
@@ -189,22 +189,20 @@ if __name__ == "__main__":
         x_val_strings, y_val = transform_data(val)
         feat = Featurizer()
         x_train = feat.train_feature(x_train_strings)
-        x_val = feat.test_feature(x_val_strings)    
+        x_val = feat.test_feature(x_val_strings)
 
         # train classifier and classify points
         y_train_prob, y_val_prob, lr = classify(x_train, y_train, x_val)
 
-        # obtain accuracies 
+        # obtain accuracies
         train_acc += accuracy(train, y_train_prob)
         val_acc += accuracy(val, y_val_prob)
-        
+
         # print top features for some folds
-        if k % 3 == 0: 
+        if k % 3 == 0:
             feat.show_top10(lr, ['Positive', 'Negative'])
         k += 1
     train_acc /= n_splits
     val_acc /= n_splits
     print("Training accuracy is " + str(train_acc))
     print("Validation accuracy is " + str(val_acc))
-
-

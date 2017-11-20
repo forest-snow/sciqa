@@ -122,7 +122,7 @@ def accuracy(data, prob):
     assert kGUESSES * len(data) == len(prob), "List of probabilities does not correspond to data"
     correct_answers = []
     predicted_answers = []
-    for vector in data:
+    for i, vector in enumerate(data):
         # list of correct answers to every question
         correct_answers.append(vector['answer'])
         # finds guesses classified as most likely correct

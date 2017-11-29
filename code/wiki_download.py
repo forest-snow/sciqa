@@ -19,13 +19,20 @@ if __name__ == "__main__":
         doc = site.pages[title]
         page['id'] = index
         page['title'] = title
+        # get categories
         categories = []
         for category in doc.categories(generator=False):
             category = category.split(':')[1]
             if not category.startswith('Wikipedia'):
                 categories.append('_'.join(category.split()))
         page['categories'] = categories
-        page['content'] = doc.text()
+        # get links
+        links = []
+        for link in doc.links(generator=False):
+            if ':' not in link:
+                links.append('_'.join(link.split()))
+        page['links'] = links
+
         wiki_data.append(page)
 
     keys = wiki_data[0].keys()

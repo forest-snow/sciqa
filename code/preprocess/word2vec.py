@@ -4,10 +4,9 @@ import _pickle as cPickle
 
 from csv import DictReader
 from gensim.models import Word2Vec
-from scipy import zeros
 
-kLENGTH = 100
-kWINDOW = 5
+DIM = 100
+WIN = 5
 
 if __name__ == '__main__':
 
@@ -17,7 +16,7 @@ if __name__ == '__main__':
 	sentences = [s.strip() for s in sentences]
 
 	# add links between named entities
-	chance = .8 / kWINDOW
+	chance = .8 / WIN
 	wiki_data = list(DictReader(open("../../data/quizbowl/wiki_data.csv", 'r')))
 
 	for wiki in wiki_data:
@@ -34,10 +33,14 @@ if __name__ == '__main__':
 
 	print(len(sentences))
 
-	model = Word2Vec(sentences, sg=1, size=kLENGTH, window=kWINDOW, negative=10, iter=20)
+	model = Word2Vec(sentences, sg=1, size=DIM, window=WIN, negative=10, iter=20)
 
 	vocab = cPickle.load(open('../../data/quizbowl/qb_split', 'rb'))[0]
-	word2vec = zeros((kLENGTH, len(vocab)))
+
+	# initialize with random values
+	r = sqrt(6) / sqrt(51)
+	word2vec = random.rand(DIM, len(vocab)) * 2 * r - r
+
 	for index, word in enumerate(vocab):
 		if word not in model.wv.vocab:
 			print(word)

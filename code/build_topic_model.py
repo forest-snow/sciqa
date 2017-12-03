@@ -8,7 +8,6 @@ import _pickle as cPickle
 
 from collections import defaultdict
 from csv import DictReader
-from gensim import corpora
 from nltk.corpus import stopwords 
 from nltk.stem.wordnet import WordNetLemmatizer
 
@@ -35,7 +34,7 @@ if __name__ == "__main__":
 		documents.append(get_key_words(wiki))
 
 	# Create the term dictionary of our courpus, where every unique term is assigned an index.
-	dictionary = corpora.Dictionary(documents)
+	dictionary = gensim.corpora.Dictionary(documents)
 
 	# Convert list of documents (corpus) into Document Term Matrix using dictionary prepared above.
 	doc_term_matrix = [dictionary.doc2bow(doc) for doc in documents]

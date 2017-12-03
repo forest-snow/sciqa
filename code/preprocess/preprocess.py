@@ -15,7 +15,7 @@ if __name__ == "__main__":
 		help="Location of the text file (.json)")
 	parser.add_argument('--wiki_data', type=str, required=True,
 		help="Location of the wiki data (.json)")
-	parser.add_argument('--outfile', type=str, required=True,
+	parser.add_argument('--output_file', type=str, required=True,
 		help="Location of the output file (.json)")
 
 	args = parser.parse_args()
@@ -36,5 +36,5 @@ if __name__ == "__main__":
 	for line in data:
 		line['text'] = process_question(line['text'], entities)
 
-	with open(args.outfile, 'w') as outfile:
+	with open(args.output_file, 'w') as outfile:
 		json.dump(data, outfile)

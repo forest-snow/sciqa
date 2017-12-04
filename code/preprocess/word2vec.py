@@ -4,6 +4,8 @@ import _pickle as cPickle
 
 from csv import DictReader
 from gensim.models import Word2Vec
+from math import sqrt
+from numpy import random
 
 DIM = 100
 WIN = 5

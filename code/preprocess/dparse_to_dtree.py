@@ -139,7 +139,7 @@ def process_parsing_trees(data_file, parse_file, is_train=False, hold_out=.2):
         for i, sentence in enumerate(sent_tokenize(text)):
             tree = make_tree(parse_text[count])
             tree.ans = line['answer']
-            tree.guesses = line['guesses']
+            tree.guesses = [(guess['guess'], guess['score']) for guess in line['guesses']]
             tree.dist = i
             tree.qid = line['id']
             tree_list.append(tree)
@@ -174,6 +174,9 @@ def process_question_file(data_files, parse_files, output_file):
         for tree in tree_list:
             if tree.ans not in vocab:
                 vocab.append(tree.ans)
+            for guess in tree.guesses:
+                if guess[0] not in vocab:
+                    vocab.append(guess[0])
 
             tree.ans_ind = vocab.index(tree.ans)
 

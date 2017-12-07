@@ -1,12 +1,16 @@
+import _pickle as cPickle, time, argparse
+
+from multiprocessing import Pool
+from nltk.corpus import stopwords
 from numpy import *
+
 from util.gen_util import *
 from util.math_util import *
 from util.dtree_util import *
 from rnn.adagrad import Adagrad
 import rnn.propagation as prop
 from classify.learn_classifiers import validate
-import _pickle as cPickle, time, argparse
-from multiprocessing import Pool
+
 
 
 # splits the training data into minibatches
@@ -132,7 +136,7 @@ if __name__ == '__main__':
                          default='models/qb_params')
 
     args = vars(parser.parse_args())
-    
+    stop = stopwords.words('english')
 
     ## load data
     vocab, rel_list, ans_list, tree_dict = \
@@ -175,6 +179,14 @@ if __name__ == '__main__':
             print(tree.get_words(), ind)
             bad_trees.append(ind)
 
+        count = 0
+        for ex, node in enumerate(tree.get_nodes()):
+            if ex != 0 and node.word not in stop:
+                count += 1
+
+        if count == 0:
+            bad_trees.append(ind)
+
     # pop bad trees, higher indices first
     # print 'removed ', len(bad_trees)
     for ind in bad_trees[::-1]:
@@ -186,6 +198,14 @@ if __name__ == '__main__':
 
         if tree.get(0).is_word == 0:
             # print tree.get_words(), ind
+            bad_trees.append(ind)
+
+        count = 0
+        for ex, node in enumerate(tree.get_nodes()):
+            if ex != 0 and node.word not in stop:
+                count += 1
+
+        if count == 0:
             bad_trees.append(ind)
 
     # pop bad trees, higher indices first

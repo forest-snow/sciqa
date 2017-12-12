@@ -1,12 +1,72 @@
 from numpy import *
 from rnn.propagation import *
-import nltk.classify.util
-from nltk.classify.scikitlearn import SklearnClassifier
+from scipy.spatial.distance import cosine
+from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import LabelEncoder
 from nltk.corpus import stopwords
 from collections import Counter
 import _pickle as cPickle
+
+kDIM = 100
+
+def softmax(x):
+    """Compute softmax values for each sets of scores in x."""
+    return exp(x) / sum(exp(x), axis=0)
+
+
+# Zero-shot classifier
+class ZeroshotClassifier:
+
+    def __init__(self, estimator, We):
+        self._estimator = estimator
+        self._vectorizer = DictVectorizer()
+        self._encoder = LabelEncoder()
+        self._We = We
+
+
+    def train(self, feature_sets):
+        X, y = list(zip(*feature_sets))
+        X = self._vectorizer.fit_transform(X)
+        y = self._encoder.fit_transform(y)
+
+        self._estimator.fit(X, y)
+        return self
+
+
+    def accuracy(self, feature_sets, ans_list, T=5):
+        classes = self._encoder.classes_
+
+        gold_answers = []
+        predicted_answers = []
+
+        for index, guesses in enumerate(ans_list):
+            curr_feats, answer = feature_sets[index]
+            gold_answers.append(answer)
+
+            X = self._vectorizer.transform(curr_feats)
+            probas = self._estimator.predict_proba(X)[0]
+            t_max = argsort(probas)[-T:]
+
+            sum_proba = 0
+            embedding = zeros(kDIM)
+            for idx in t_max:
+                we_ind = classes[idx]
+                embedding += probas[idx] * self._We[we_ind]
+                sum_proba += probas[idx]
+
+            embedding /= sum_proba
+
+            est_scores = []
+            scores = softmax([item[1] for item in guesses])
+            for guess, score in zip(guesses, scores):
+                vec = self._We[guess[0]]
+                est_scores.append(- cosine(vec, embedding))
+
+            predicted_answers.append(guesses[argmax(est_scores)][0])
+
+        return accuracy_score(gold_answers, predicted_answers)
 
 
 # create question dictionary such that sentences belonging to the same
@@ -28,29 +88,12 @@ def collapse_questions(train_trees, test_trees):
 
     return train_q, test_q
 
-# compute accuracy given the classifier and test data
-def accuracy(classifier, data, ans_list):
-    gold_answers = []
-    predicted_answers = []
-
-    for index, guesses in enumerate(ans_list):
-        curr_feats, answer = data[index]
-        gold_answers.append(answer)
-        probs = classifier.prob_classify(curr_feats)
-
-        scores = []
-        for guess, score in guesses:
-            scores.append(probs.prob(guess))
-
-        predicted_answers.append(guesses[argmax(scores)][0])
-
-    return accuracy_score(gold_answers, predicted_answers)
 
 # - full evaluation on test data, returns accuracy on all sentence positions 
 #   within a question including full question accuracy
 # - can add / remove features to replicate baseline models described in paper
 # - bow_feats is unigrams, rel_feats is dependency relations
-def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_feats=False):
+def evaluate(data_split, model_file, We_file, d, rnn_feats=True, bow_feats=False, rel_feats=False):
 
     stop = stopwords.words('english')
 
@@ -61,6 +104,8 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
     test_trees = tree_dict['val']
 
     params, vocab, rel_list = cPickle.load(open(model_file, 'rb'))
+
+    wiki_vectors = cPickle.load(open(We_file, 'rb')).transpose()
 
     (rel_dict, Wv, b, We) = params
 
@@ -86,7 +131,7 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
             for node in tree.get_nodes():
                 node.vec = We[:, node.ind].reshape( (d, 1))
 
-            tree.ans_list = [(guess[0].lower(), guess[1]) for guess in tree.guesses]
+            tree.ans_list = [(ans_list.index(guess[0]), guess[1]) for guess in tree.guesses]
 
     train_q, test_q = collapse_questions(train_trees, test_trees)
 
@@ -114,6 +159,7 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
             words = zeros ( (d, 1))
             bow = []
             count = 0.
+            tree = None
             curr_ave = None
             curr_words = None
 
@@ -162,88 +208,20 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
                             curr_feats[this_rel] = 1.0
 
                 if tt == 0:
-                    train_feats.append( (curr_feats, tree.ans.lower()) )
+                    train_feats.append( (curr_feats, ans_list.index(tree.ans)) )
                     train_ans_list.append(tree.ans_list)
 
                 else:
-                    test_feats.append( (curr_feats, tree.ans.lower()) )
+                    test_feats.append( (curr_feats, ans_list.index(tree.ans)) )
                     test_ans_list.append(tree.ans_list)
+
 
     print('total training instances:', len(train_feats))
     print('total testing instances:', len(test_feats))
 
     # can modify this classifier / do grid search on regularization parameter using sklearn
-    classifier = SklearnClassifier(LogisticRegression(C=100))
+    classifier = ZeroshotClassifier(LogisticRegression(C=10), wiki_vectors)
     classifier.train(train_feats)
 
-    print('accuracy train:', accuracy(classifier, train_feats, train_ans_list))
-    print('accuracy test:', accuracy(classifier, test_feats, test_ans_list))
-
-
-# - returns single sentence accuracy on training / validation set
-# - use ONLY for hyperparameter tuning / early stopping criteria
-# - this returns single sentence accuracy, not question-level accuracy
-# - a logistic regression classifier is trained on the average hidden representation
-#   of all nodes in the tree. the full evaluation (in the evaluate method)
-# - includes the average word embeddings in addition to collapsing sentences
-#   belonging to the same question
-def validate(data, params, d):
-
-    stop = stopwords.words('english')
-
-    (rel_dict, Wv, b, L) = params
-
-    print('validating, adding lookup')
-    for split in data:
-        for tree in split:
-            for node in tree.get_nodes():
-                node.vec = L[:, node.ind].reshape( (d, 1))
-
-    train_feats = []
-    val_feats = []
-
-    for tt, split in enumerate(data):
-
-        if tt == 0:
-            print('processing train')
-
-        else:
-            print('processing val')
-
-        for num_finished, tree in enumerate(split):
-
-            # process validation trees
-            forward_prop(params, tree, d, labels=False)
-
-            ave = zeros( (d, 1))
-            words = zeros ( (d, 1))
-            count = 0
-            wcount = 0
-            word_list = []
-            for ex, node in enumerate(tree.get_nodes()):
-
-                if ex != 0 and node.word not in stop:
-                    ave += node.p_norm
-                    count += 1
-
-            ave = ave / count
-            featvec = ave.flatten()
-
-            curr_feats = {}
-            for dim, val in ndenumerate(featvec):
-                curr_feats['_' + str(dim)] = val
-
-            if tt == 0:
-                train_feats.append( (curr_feats, tree.ans) )
-
-            else:
-                val_feats.append( (curr_feats, tree.ans) )
-
-    print('training')
-    classifier = SklearnClassifier(LogisticRegression(C=10))
-    classifier.train(train_feats)
-
-    print('predicting...')
-    train_acc = nltk.classify.util.accuracy(classifier, train_feats)
-    val_acc = nltk.classify.util.accuracy(classifier, val_feats)
-    return train_acc, val_acc
+    print('accuracy train:', classifier.accuracy(train_feats, train_ans_list))
+    print('accuracy test:', classifier.accuracy(test_feats, test_ans_list))

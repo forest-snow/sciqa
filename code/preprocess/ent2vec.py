@@ -12,10 +12,7 @@ kWIN = 5
 
 if __name__ == '__main__':
 
-	with open('../../data/quizbowl/qs_train.txt', 'r') as infile:
-		sentences = infile.readlines()
-
-	sentences = [s.strip().split() for s in sentences]
+	sentences = []
 
 	# add links between named entities
 	chance = .8 / kWIN
@@ -35,19 +32,19 @@ if __name__ == '__main__':
 
 	print(len(sentences))
 
-	model = Word2Vec(sentences, sg=1, size=kDIM, window=kWIN, negative=10, iter=20)
+	ent_list = json.load(open('../../data/quizbowl/answer_set.json', 'r'))
 
-	vocab = cPickle.load(open('../../data/quizbowl/qb_split', 'rb'))[0]
+	model = Word2Vec(sentences, sg=1, size=kDIM, window=kWIN, negative=10, iter=60)
 
 	# initialize with random values
 	r = sqrt(6) / sqrt(51)
-	word2vec = random.rand(kDIM, len(vocab)) * 2 * r - r
+	word2vec = random.rand(kDIM, len(ent_list)) * 2 * r - r
 
-	for index, word in enumerate(vocab):
+	for index, word in enumerate(ent_list):
 		if word not in model.wv.vocab:
 			print(word)
 		else:
 			word2vec[:, index] = model.wv[word]
 
-	with open('../../data/quizbowl/qb_We', 'wb') as outfile:
+	with open('../../data/quizbowl/qb_Wv', 'wb') as outfile:
 		cPickle.dump(word2vec, outfile)

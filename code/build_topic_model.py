@@ -16,13 +16,18 @@ csv.field_size_limit(sys.maxsize)
 kTOPICS = 100
 
 def get_key_words(wiki):
+	key_words = []
+
 	punctuation = string.punctuation.replace('-', '').replace('_', '')
 	categories = wiki['categories'][2:-2].split("\', \'")
 
-	key_words = []
 	for cat in categories:
 		cat = cat.translate(str.maketrans('', '', punctuation))
 		key_words.extend(cat.split('_'))
+
+	links = wiki['links'][2:-2].split("\', \'")
+	key_words.extend(links)
+
 	return key_words
 
 if __name__ == "__main__":
@@ -40,23 +45,20 @@ if __name__ == "__main__":
 	doc_term_matrix = [dictionary.doc2bow(doc) for doc in documents]
 
 	# Create the object for LDA model using gensim library.
-	lda_model = gensim.models.ldamodel.LdaModel.load('../data/quizbowl/wiki_topics.model')
+	lda_model = gensim.models.ldamodel.LdaModel(doc_term_matrix, num_topics=kTOPICS)
 
 	# Train LDA model on the document term matrix.
-	print("Training...")
+	print("training...")
 	lda_model.update(doc_term_matrix, passes=20)
 
-	print("Saving...")
-	lda_model.save('../data/quizbowl/wiki_topics.model')
-
-	doc_topic_matrix = numpy.zeros((len(wiki_data), kTOPICS))
+	doc_to_vec = numpy.zeros((len(wiki_data), kTOPICS))
 	for i, bow in enumerate(doc_term_matrix):
 		for topic in lda_model.get_document_topics(bow):
 			tid = topic[0]
-			doc_topic_matrix[int(wiki_data[i]['id']), tid] = topic[1]
+			doc_to_vec[int(wiki_data[i]['id']), tid] = topic[1]
 
-	with open('../data/quizbowl/wiki_topic_matrix', 'wb') as pickle_file:
-		cPickle.dump(doc_topic_matrix, pickle_file)
+	with open('../data/quizbowl/qb_Wv', 'wb') as pickle_file:
+		cPickle.dump(doc_to_vec, pickle_file)
 
 	topic_entity = defaultdict(list)
 	for i, bow in enumerate(doc_term_matrix):

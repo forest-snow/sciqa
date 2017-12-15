@@ -57,7 +57,7 @@ def transform_qa_pair(question, answer):
         sentence: string
     """
     # remove punctuations from question and answer (dashes (-) are kept)
-    punctuation = string.punctuation.replace('-','')
+    punctuation = string.punctuation.replace('-', '').replace('_', '')
     question = question.translate(str.maketrans('', '', punctuation))
     answer = answer.translate(str.maketrans('', '', punctuation))
 
@@ -158,7 +158,7 @@ def classify(x_train, y_train, x_test):
 
 
 if __name__ == "__main__":
-    data = qb_train = json.load(open('../data/quizbowl/qb_train.json', 'r'))
+    data = qb_train = json.load(open('../data/quizbowl/qb_train_ner.json', 'r'))
 
     # split into train and validation sets
     train, val = train_test_split(data, test_size = 0.2)

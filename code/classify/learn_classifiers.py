@@ -29,22 +29,55 @@ def collapse_questions(train_trees, test_trees):
     return train_q, test_q
 
 # compute accuracy given the classifier and test data
-def accuracy(classifier, data, ans_list):
+def accuracy(classifier, data, ans_list, qid_list):
     gold_answers = []
     predicted_answers = []
+
+    log = []
 
     for index, guesses in enumerate(ans_list):
         curr_feats, answer = data[index]
         gold_answers.append(answer)
         probs = classifier.prob_classify(curr_feats)
 
-        scores = []
-        for guess, score in guesses:
-            scores.append(probs.prob(guess))
+        est_scores = []
+        scores = softmax([item[1] for item in guesses])
+        for guess, score in zip(guesses, scores):
+            est_scores.append(probs.prob(guess[0]))
 
-        predicted_answers.append(guesses[argmax(scores)][0])
+        pred = guesses[argmax(est_scores)][0]
+        predicted_answers.append(pred)
 
+        if answer != pred:
+            top5 = argsort(est_scores)[-5:]
+            log.append(str(qid_list[index]) + ', ' + ', '.join([guesses[idx][0] + ': ' + str(est_scores[idx]) for idx in top5]))
+
+    with open('logs/bow_wrong.log', 'w') as f:
+        for line in log:
+            f.write(line + '\n')
     return accuracy_score(gold_answers, predicted_answers)
+
+def predict(classifier, data, ans_list, qid_list):
+    predicted_answers = []
+
+    for index, guesses in enumerate(ans_list):
+        curr_feats, answer = data[index]
+        probs = classifier.prob_classify(curr_feats)
+
+        est_scores = []
+        scores = softmax([item[1] for item in guesses])
+        for guess, score in zip(guesses, scores):
+            est_scores.append(probs.prob(guess[0]))
+
+        predicted_answers.append(guesses[argmax(est_scores)][0])
+
+    with open('../data/lr+score_answer.csv', 'w') as f:
+        f.write('id,answer\n')
+        for ID, answer in zip(qid_list, predicted_answers):
+            if ',' in answer:
+                f.write(str(ID) + ',\"' + answer + '\"\n')
+            else:
+                f.write(str(ID) + ',' + answer + '\n')
 
 # - full evaluation on test data, returns accuracy on all sentence positions 
 #   within a question including full question accuracy
@@ -86,7 +119,7 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
             for node in tree.get_nodes():
                 node.vec = We[:, node.ind].reshape( (d, 1))
 
-            tree.ans_list = [(guess[0].lower(), guess[1]) for guess in tree.guesses]
+            tree.ans_list = tree.guesses
 
     train_q, test_q = collapse_questions(train_trees, test_trees)
 
@@ -97,6 +130,9 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
     test_feats = []
     train_ans_list = []
     test_ans_list = []
+
+    train_qid_list = []
+    test_qid_list = []
 
     for tt, split in enumerate([train_q, test_q]):
 
@@ -158,16 +194,21 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
                     for l in tree.get_nodes():
                         if len(l.parent) > 0:
                             par, rel = l.parent[0]
-                            this_rel = l.word + '__' + rel + '__' + tree.get(par).word
-                            curr_feats[this_rel] = 1.0
+                            if rel == 'det':
+                                this_rel = l.word + '__' + rel + '__' + tree.get(par).word
+                                curr_feats[this_rel] = 1.0
+                            elif rel == 'nummod':
+                                curr_feats['__nummod__' + tree.get(par).word] = 1.0
 
                 if tt == 0:
-                    train_feats.append( (curr_feats, tree.ans.lower()) )
+                    train_feats.append( (curr_feats, tree.ans) )
                     train_ans_list.append(tree.ans_list)
+                    train_qid_list.append(tree.qid)
 
-                else:
-                    test_feats.append( (curr_feats, tree.ans.lower()) )
+                elif i + 1 == len(q):
+                    test_feats.append( (curr_feats, tree.ans) )
                     test_ans_list.append(tree.ans_list)
+                    test_qid_list.append(tree.qid)
 
     print('total training instances:', len(train_feats))
     print('total testing instances:', len(test_feats))
@@ -176,8 +217,9 @@ def evaluate(data_split, model_file, d, rnn_feats=True, bow_feats=False, rel_fea
     classifier = SklearnClassifier(LogisticRegression(C=100))
     classifier.train(train_feats)
 
-    print('accuracy train:', accuracy(classifier, train_feats, train_ans_list))
-    print('accuracy test:', accuracy(classifier, test_feats, test_ans_list))
+    # predict(classifier, test_feats, test_ans_list, test_qid_list)
+    print('accuracy train:', accuracy(classifier, train_feats, train_ans_list, train_qid_list))
+    print('accuracy test:', accuracy(classifier, test_feats, test_ans_list, test_qid_list))
 
 
 # - returns single sentence accuracy on training / validation set

@@ -2,6 +2,7 @@ from numpy import *
 from rnn.propagation import *
 from scipy.spatial.distance import cosine
 from sklearn.feature_extraction import DictVectorizer
+from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
@@ -9,38 +10,47 @@ from nltk.corpus import stopwords
 from collections import Counter
 import _pickle as cPickle
 
-kDIM = 300
+kTHRESHOLD = .2
+kTOPICS = 108
 
 def softmax(x):
     """Compute softmax values for each sets of scores in x."""
     return exp(x) / sum(exp(x), axis=0)
 
+# Topic classifier
+class TopicClassifier:
 
-# Zero-shot classifier
-class ZeroshotClassifier:
-
-    def __init__(self, estimator, We, ans_list):
+    def __init__(self, estimator, answer_topic_map, ans_list):
         self._estimator = estimator
+        self._answer_topic_map = answer_topic_map
         self._ans_list = ans_list
         self._vectorizer = DictVectorizer()
         self._encoder = LabelEncoder()
-        self._We = We
 
 
     def train(self, feature_sets):
-        X, y = list(zip(*feature_sets))
+        X, y, weights = [], [], []
+        for feats, answer in feature_sets:
+            topics = self._answer_topic_map[answer]
+            for key, prob in topics:
+                if prob > kTHRESHOLD:
+                    X.append(feats)
+                    y.append(key)
+                    weights.append(prob)
+
         X = self._vectorizer.fit_transform(X)
         y = self._encoder.fit_transform(y)
-
-        self._estimator.fit(X, y)
+        self._estimator.fit(X, y, sample_weight=weights)
         return self
 
 
-    def accuracy(self, feature_sets, ans_list, T=5):
-        classes = self._encoder.classes_
+    def accuracy(self, lr, feature_sets, ans_list, qid_list, T=5):
+        classes = list(self._encoder.classes_)
 
         gold_answers = []
         predicted_answers = []
+
+        log = []
 
         for index, guesses in enumerate(ans_list):
             curr_feats, answer = feature_sets[index]
@@ -48,63 +58,36 @@ class ZeroshotClassifier:
 
             X = self._vectorizer.transform(curr_feats)
             probas = self._estimator.predict_proba(X)[0]
-            t_max = argsort(probas)[-T:]
+            lr_probas = lr.prob_classify(curr_feats)
 
-            sum_proba = 0
-            embedding = zeros(kDIM)
-            for idx in t_max:
-                we_ind = self._ans_list.index(classes[idx])
-                embedding += probas[idx] * self._We[we_ind]
-                sum_proba += probas[idx]
-
-            embedding /= sum_proba
+            max_lr = max([lr_probas.prob(guess[0]) for guess in guesses])
 
             est_scores = []
             scores = softmax([item[1] for item in guesses])
             for guess, score in zip(guesses, scores):
-                vec = self._We[self._ans_list.index(guess[0])]
-                est_scores.append(- cosine(vec, embedding))
+                vec = zeros(kTOPICS)
+                topics = self._answer_topic_map[guess[0]]
+                for key, prob in topics:
+                    vec[classes.index(key)] = prob
 
-            predicted_answers.append(guesses[argmax(est_scores)][0])
-
-        return accuracy_score(gold_answers, predicted_answers)
-
-    def predict(self, feature_sets, ans_list, qid_list, T=5):
-        classes = self._encoder.classes_
-
-        predicted_answers = []
-
-        for index, guesses in enumerate(ans_list):
-            curr_feats, answer = feature_sets[index]
-
-            X = self._vectorizer.transform(curr_feats)
-            probas = self._estimator.predict_proba(X)[0]
-            t_max = argsort(probas)[-T:]
-
-            sum_proba = 0
-            embedding = zeros(kDIM)
-            for idx in t_max:
-                we_ind = self._ans_list.index(classes[idx])
-                embedding += probas[idx] * self._We[we_ind]
-                sum_proba += probas[idx]
-
-            embedding /= sum_proba
-
-            est_scores = []
-            scores = softmax([item[1] for item in guesses])
-            for guess, score in zip(guesses, scores):
-                vec = self._We[self._ans_list.index(guess[0])]
-                est_scores.append(- cosine(vec, embedding))
-
-            predicted_answers.append(guesses[argmax(est_scores)][0])
-
-        with open('../data/zero+score_answer.csv', 'w') as f:
-            f.write('id,answer\n')
-            for ID, answer in zip(qid_list, predicted_answers):
-                if ',' in answer:
-                    f.write(str(ID) + ',\"' + answer + '\"\n')
+                if max_lr > .5:
+                    est_scores.append(lr_probas.prob(guess[0]))
                 else:
-                    f.write(str(ID) + ',' + answer + '\n')
+                    est_scores.append(- cosine(vec, probas) + 0.1 * lr_probas.prob(guess[0]))
+
+            pred = guesses[argmax(est_scores)][0]
+            predicted_answers.append(pred)
+            '''
+            if answer == pred:
+                top5 = argsort(est_scores)[-5:]
+                log.append(str(qid_list[index]) + ', ' + ', '.join([guesses[idx][0] + ': ' + str(est_scores[idx]) for idx in top5]))
+            '''
+        '''
+        with open('logs/topic_correct.log', 'w') as f:
+            for line in log:
+                f.write(line + '\n')
+        '''
+        return accuracy_score(gold_answers, predicted_answers)
 
 
 # create question dictionary such that sentences belonging to the same
@@ -131,7 +114,7 @@ def collapse_questions(train_trees, test_trees):
 #   within a question including full question accuracy
 # - can add / remove features to replicate baseline models described in paper
 # - bow_feats is unigrams, rel_feats is dependency relations
-def evaluate(data_split, model_file, We_file, d, rnn_feats=True, bow_feats=False, rel_feats=False):
+def evaluate(data_split, model_file, topic_file, d, rnn_feats=True, bow_feats=False, rel_feats=False):
 
     stop = stopwords.words('english')
 
@@ -143,7 +126,7 @@ def evaluate(data_split, model_file, We_file, d, rnn_feats=True, bow_feats=False
 
     params, vocab, rel_list = cPickle.load(open(model_file, 'rb'))
 
-    wiki_vectors = cPickle.load(open(We_file, 'rb')).transpose()
+    answer_topic_map = cPickle.load(open(topic_file, 'rb'))
 
     (rel_dict, Wv, b, We) = params
 
@@ -258,14 +241,16 @@ def evaluate(data_split, model_file, We_file, d, rnn_feats=True, bow_feats=False
                     test_ans_list.append(tree.ans_list)
                     test_qid_list.append(tree.qid)
 
-
     print('total training instances:', len(train_feats))
     print('total testing instances:', len(test_feats))
 
+    lr = SklearnClassifier(LogisticRegression(C=100))
+    lr.train(train_feats)
+
     # can modify this classifier / do grid search on regularization parameter using sklearn
-    classifier = ZeroshotClassifier(LogisticRegression(C=10), wiki_vectors, ans_list)
+    classifier = TopicClassifier(LogisticRegression(C=10), answer_topic_map, ans_list)
     classifier.train(train_feats)
 
     # classifier.predict(test_feats, test_ans_list, test_qid_list)
-    print('accuracy train:', classifier.accuracy(train_feats, train_ans_list))
-    print('accuracy test:', classifier.accuracy(test_feats, test_ans_list))
+    # print('accuracy train:', classifier.accuracy(lr, train_feats, train_ans_list))
+    print('accuracy test:', classifier.accuracy(lr, test_feats, test_ans_list, test_qid_list))
